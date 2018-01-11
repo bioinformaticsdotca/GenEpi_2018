@@ -1,6 +1,6 @@
 ---
 layout: workshop_main_3day
-permalink: /genomic_epidemiology_2018
+permalink: /epidemiology_2018
 title: Genomic Epidemiology
 header1: Workshop Pages for Students
 header2: Infectious Disease Genomic Epidemiology
