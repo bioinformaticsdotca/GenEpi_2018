@@ -5,9 +5,9 @@ title: Genomic Epidemiology
 header1: Workshop Pages for Students
 header2: Infectious Disease Genomic Epidemiology
 image: /site_images/CBW_wshop-epidem_map-icon.png
-keywords: Align ChiP-Seq and WGBS sequence data to reference genome, integrative tools for epigenomic data sets
-description: Course providing an introduction to histone ChiP-seq and WGBS data analysis followed by integrated tutorials demonstrating the use of open source ChiP-seq and WGBS analysis packages. 
-instructors: Martin Hirst, Misha Bilenky, Guillaume Bourque, David Bujold
+keywords: next generation sequencing platforms, visualization tools 
+description: Course providing an introduction to genomic epidemiology analysis followed by hands-on practical tutorials demonstrating the use of selected analysis tools. 
+instructors: William Hsiao, Gary Van Domselaar, Eduardo Taboada, Andrew McArthur, Anamaria Crisan, Fiona Brinkman
 length: 3 days
 ---
 
