@@ -1,11 +1,11 @@
 ---
 layout: tutorial_page
-permalink: /genomic_epidemiology_2017_PGA_1
+permalink: /genomic_epidemiology_2018_PGA_1
 title: Genomic Epidemiology
 header1: Pathogen Genomic Analysis I
 header2: SNVPhyl
 image: /site_images/CBW_wshop-epidem_map-icon.png
-home: https://bioinformaticsdotca.github.io/genomic_epidemiology_2017
+home: https://bioinformaticsdotca.github.io/genomic_epidemiology_2018
 description: Pathogen Genomic Analysis 1
 author: Gary Van Domselaar
 modified: May 1st, 2017
@@ -32,30 +32,20 @@ When finished, the output files should all be in `~/workspace/VCholerae_SNVPhy_o
 ----
 The data for this exercise is a set of whole genome sequencing data from a number of *Salmonella heidelberg* strains.    
 
-We will be using the [SNVPhyl][] phylogenomics pipeline to construct a whole genome phylogeny from the raw read data and a reference genome.  The files required for this exercise are:
+We will be using the [SNVPhyl][] phylogenomics pipeline to construct a whole genome phylogeny from the read data and we will examine more closely some of the output files SNVPhyl produces. The files required for this exercise are:
 
 Reference: `~/CourseData/IDGE_data/Sheidelberg-snvphyl/S_HeidelbergSL476.fasta` 
 Reads Directory: `~/CourseData/IDGE_data/Sheidelberg-snvphyl/fastq`
 
-To speed up the execution time, these read files have been reduced to an average coverage of 10X.  As a result, please set the `--min-coverage` parameter to `4` for the SNVPhyl run. 
+These read files have been reduced to an average coverage of 10X to speed up execution. As a result, please set the `--min-coverage` parameter to `4` for the SNVPhyl run. Once SNVPhyl has finished running, please answer the following questions.
 
-To run the pipeline, we will execute the main pipeline script at `/usr/local/snvphyl-galaxy-cli/bin/snvphyl.py` using the `--deploy-docker` flag to launch the dockerized version of the pipeline.  The command should take the following format:
-
-`python /usr/local/snvphyl-galaxy-cli/bin/snvphyl.py --deploy-docker --fastq-dir [FASTQ_DIR] --reference-file [REFERENCE_FILE_LOCATION] --min-coverage 4 --output-dir /mnt/workspace/[OUTPUT_DIR_NAME]`
-
-The output from the pipeline can be found under ~/workspace/[OUTPUT_DIR_NAME].  
-
-1.  Examine the output file `filterStats.txt` to see a summary of the number of SNVs identified, and the number removed due to the SNV filtering steps in SNVPhyl. How many SNV sites were used to generate the phylogeny? How many were removed?
+1. Examine the output file `filterStats.txt` to see a summary of the number of SNVs identified, and the number removed due to the SNV filtering steps in SNVPhyl. How many SNV sites were used to generate the phylogeny? How many were removed?
 
 2. Examine the table of identified SNVs (`snvTable.tsv`) and take a look at the positions and identified bases which have a status of **filtered-invalid**. Can you think of reasons why these positions were filtered by SNVPhyl?
 
-3.  SNVPhyl requires that at least 75% (`snv-abundance-ratio`) of the reads mapping as variants to a position on the isolate genome are in agreement before considering the position as a high quality single nucleotide variant.  Can you think of why this requirement makes the pipeline more robust?
+3. SNVPhyl requires that at least 75% (`snv-abundance-ratio`) of the reads overlapping a particular position on the isolate genome to be in agreement before considering the position as a high quality single nucleotide variant.  Can you think of why this requirement makes the pipeline more robust?
 
 [SNVPhyl]: https://snvphyl.readthedocs.io
-
-
-
-
 [pop-vc-f1]: http://mbio.asm.org/content/2/4/e00157-11/F1.expansion.html
 [haiti-cholera]: http://en.wikipedia.org/wiki/2010%E2%80%9313_Haiti_cholera_outbreak
 [metadata.tsv]: metadata.tsv
