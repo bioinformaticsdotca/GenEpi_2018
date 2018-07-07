@@ -187,10 +187,10 @@ kat filter seq -i -o unmatched --seq ex2_1.fastq --seq2 ex2_2.fastq ../../module
 ---
 ### Step 2: Classify reads against bacterial kraken database
 
-Now let's classify our reads against the kraken database. Please make sure to include `--classified-out` and `-unclassified-out` as we will make use of these files.
+Now let's classify our reads against the kraken database. Please make sure to include `-unclassified-out` as we will make use of these files.
 
 ```bash
-kraken --paired --threads 4 --db ../../module_data/kraken_db/ --classified-out classified.fasta --unclassified-out unclassified.fasta unmatched.in.R1.fastq unmatched.in.R2.fastq > results_initial.txt
+kraken --paired --threads 4 --db ../../module_data/kraken_db/ --unclassified-out unclassified.fasta unmatched.in.R1.fastq unmatched.in.R2.fastq > results_initial.txt
 ```
 
 Let's also construct a text report and a Krona chart.
@@ -207,27 +207,29 @@ Now we can take a look at the text report and Krona chart from `~/workspace/modu
 
 ![image][]
 
-Huh!? That's odd. It looks like ~20% of our reads are unclassified while ~80% of our reads belong to the subfamiliy [Coronavirinae](https://en.wikipedia.org/wiki/Coronavirinae), but not to any more specific taxonomic level. When Kraken classifies k-mers it will match them to the lowest commen ancestor of all genomes containing the k-mer, in this case to Coronovirinae. This could possibly indicate that the organism these reads belong to is not well-represented in our Kraken database (possibly an emerging pathogen).
+Huh!? That's odd. It looks like ~90% of our reads are unclassified, even after removing human k-mers. These reads could all be sequencing artifacts, or they could indicate that the organism these reads belong to is not well-represented in our Kraken database (possibly even an emerging pathogen).
 
-One option to get a bit more information about what's going on would be to use a larger Kraken database, but this requires a lot more computer resources. Another option is to try and assemble these reads with [SPAdes][] and see if we can make any sense of them. Let's try this option.
+One option to get a bit more information about what's going on would be to use a larger Kraken database, but this requires a lot more computer resources. Another option is to try and assemble the unclassified reads (`unclassified.fasta`) with [SPAdes][] and see if we can make any sense of them. Let's try this option.
 
-SPAdes normally operates on reads in fastq format (sequence data plus quality scores), but kraken outputs the classified and unclassified reads in fasta format (no quality score information). Quality scores are useful for correcting possible errors in the reads, but we can still assemble reads into genomes without them and get reasonable results (assuming the reads already are relativly error-free). Let's do this now, disabling error correction with `--only-assembler`.
+SPAdes normally operates on reads in fastq format (sequence data plus quality scores), but kraken outputs the unclassified reads in fasta format (no quality score information). Quality scores are useful for correcting possible errors in the reads, but we can still assemble reads into genomes without them and get reasonable results (assuming the reads already are relativly error-free). Let's do this now, disabling error correction with `--only-assembler`.
 
 ```
 spades.py --only-assembler -s unclassified.fasta -o unclassified_results
-
-spades.py --only-assembler -s classified.fasta -o classified_results
 ```
 
-The assembled genomes will be located under `classified_results/contigs.fasta` and `unclassified_results/contigs.fasta`. In order to get a better idea of what's in these files, let's run them through [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) and examine the matches.
+The assembled genome will be located under `unclassified_results/contigs.fasta`. In order to get a better idea of what's in these files, let's run the assembled genome through [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) and examine the matches.
 
 ### Questions
 
-1. Look through the matches for the longest and highest-covered contigs in NCBI. Is there any matches more specific than *Coronovirinae*? What do you suppose is responsible for the patients illness?
+1. Look through the matches for a few of the longest and highest-covered contigs in NCBI. Are there any matches that could tell you a bit more about what is responsible for the patients illness?
 
    You can look through the results for different contigs in NCBI BLAST by using the drop-down menu shown below:
 
-   ![blast-drop-down][images/]
+   ![blast-drop-down][images/blast-drop-down.png]
+
+   The length and coverage of the contig is listed in the sequence id (e.g., `len_5000` for 5000 bp, `cov_5.1` for an average coverage of 5.1). The coverage indicates how much data (how many reads) match up with this particular contig.
+
+   *Note: We specifically removed the organism you will find from the kraken database for this workshop. This organism would be found by Kraken for the standard bacterial/viral databases, but emerging pathogens may not be*.
 
 ## Paper
 
