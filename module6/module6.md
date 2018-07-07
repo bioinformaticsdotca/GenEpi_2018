@@ -18,8 +18,7 @@ modified: May 3rd, 2017
 2. [Environment Setup](#env)
 3. [Exercise 1](#ex1)
 4. [Exercise 2](#ex2)
-5. [Exercise 3](#ex3)
-6. [Paper](#paper)
+5. [Paper](#paper)
 
 <a name="intro"></a>
 ## Introduction
@@ -65,7 +64,7 @@ On April 27, a 66-year old male was admitted to a local ER. He presented with fe
 ### Demonstration:
 
 * Filter host reads with KAT
-* Run Kraken with mini kraken database from RefSeq
+* Run Kraken with small bacteria and viral database
 * Generate text and graphic reports with Kraken and Krona
 
 ---
@@ -107,7 +106,7 @@ Now that we have most, if not all, host reads filtered out, it’s time to class
 
 Database selection is one of the most crucial parts of running Kraken. One of the many factors that must be considered are the computational resources available. Our current AWS image for the course has only 16G of memory. A major disadvantage of Kraken is that it loads the entire database into memory. With the full viral, bacterial, and archael database on the order of 100 GB we would be unable to run Kraken on the course machine (though the recently released Kraken 2 has done a lot to reduce database size). To help mitigate this, Kraken allows reduced databases to be constructed, which will still give reasonable results. We have constructed our own miniture Kraken database for this course, though a downloadable version is also provided by the authors: [minikraken](https://ccb.jhu.edu/software/kraken/dl/minikraken.tgz).
 
-Lets run the following command in our current directory to classify our reads against the minikraken database.
+Lets run the following command in our current directory to classify our reads against the kraken database.
 
 ```bash
 kraken --paired --threads 4 --db ../../module_data/kraken_db/ unmatched.in.R1.fastq unmatched.in.R2.fastq > results_initial.txt
@@ -163,233 +162,72 @@ Click on final_web_report.html and you should see the image below.
 <a name="ex2"></a>
 ## Exercise 2
 
-
 ### Background:
 
 On April 24, a 5-year old female was admitted to a local ER. She presented with high fever, chills and enlarged lymph nodes. CBC revealed elevated white blood cell count, neutrophils, etc. The hospital epidemiologist was consulted to confirm the clinician's’ findings. 
 
-
-
 ### Demonstration:
 
 * Filter host reads with KAT
-* Run Kraken with specific bacterial and viral databases
-* Generate text and graphic reports with Kraken and Kronatools
-
+* Run Kraken with small bacteria and viral database
+* Generate text and graphic reports with Kraken and Krona
+* Assemble reads and send to NCBI BLAST to check against additional database
 
 ---
 ### Step 1: Host read filtering
 
 The first step in this demonstration is to remove the host reads from the dataset prior to downstream analyses.
 
-
 ```bash
 cd ~/workspace/module6/ex2/
 
-kat filter seq -i -o unmatched --seq ../EPD_IMS/reads/ex2/ex2_R1.fastq --seq2 ../EPD_IMS/reads/ex2/ex2_R2.fastq ../EPD_IMS/kat_db/human_kmers.jf
-
+kat filter seq -i -o unmatched --seq ex2_1.fastq --seq2 ex2_2.fastq ../../module_data/kat_db/human_kmers.jf
 ```
 
 ---
 ### Step 2: Classify reads against bacterial kraken database
 
-In the previous example, we were introduced to minikraken. Recall, minikraken is a smaller database that includes a subset of complete bacterial, archaeal and viral genomes in RefSeq. In the following example, we will be using multiple, larger databases to increase our confidence that the database(s) we use will be able to detect the microbial pathogen sequences present in our sample.
-
-
-We will be using a parallel analysis pipeline in this approach as shown in the image below.
-
-
-<img src="https://github.com/bioinformaticsdotca/Genomic_Epi_2017/blob/master/module6/images/parallel_analyses.png?raw=true" alt="Parallel analyses pipeline" width="750" />
-
-In the following exercise, we will run through both bacterial and viral databases, starting with the bacterial database.
-
+Now let's classify our reads against the kraken database. Please make sure to include `--classified-out` and `-unclassified-out` as we will make use of these files.
 
 ```bash
-kraken --paired --threads 4 --db  ../EPD_IMS/kraken_db/bacterial unmatched.in.R1.fastq  unmatched.in.R2.fastq  > results_bacterial.txt
-
-kraken-report  --db ../EPD_IMS/kraken_db/bacterial results_bacterial.txt > bacterial_report.txt
-
+kraken --paired --threads 4 --db ../../module_data/kraken_db/ --classified-out classified.fasta --unclassified-out unclassified.fasta unmatched.in.R1.fastq unmatched.in.R2.fastq > results_initial.txt
 ```
 
-
-Let’s open up the file ~/workspace/modules6/ex2/bacterial_report.txt in the web browser to visualize the results.
-
-Looks like all the reads were marked as unclassified. One logical answer would be that our microbial pathogen of interest is not present in our database. Since we ran our reads against a bacterial database, perhaps we should try the viral one next.
-
-
-
----
-### Step 3: Classify reads against viral kraken database
-
-
-Please note that we are running these commands on the reads generated from KAT and not output from the previous Kraken run. These are independent but parallel runs on the **same** data from KAT.
+Let's also construct a text report and a Krona chart.
 
 ```bash
-kraken --paired --threads 4 --db  ../EPD_IMS/kraken_db/viral unmatched.in.R1.fastq  unmatched.in.R2.fastq  > results_viral.txt
+kraken-report --db ../../module_data/kraken_db/ results_initial.txt > results_final.txt
 
-kraken-report  --db ../EPD_IMS/kraken_db/viral results_viral.txt > viral_report.txt
+cut -f2,3 results_initial.txt > krona_input.txt
 
+ktImportTaxonomy krona_input.txt -o final_web_report.html
 ```
 
-Open the file ~/workspace/modules6/ex2/viral_report.txt in your web browser to view the result. Looks like a large amount of our reads matched to the Orthopoxvirus genus; though we could not detect a species.
+Now we can take a look at the text report and Krona chart from `~/workspace/modules6/ex2/bacterial_report.txt` in the web browser.
 
+![image][]
 
+Huh!? That's odd. It looks like ~20% of our reads are unclassified while ~80% of our reads belong to the subfamiliy [Coronavirinae](https://en.wikipedia.org/wiki/Coronavirinae), but not to any more specific taxonomic level. When Kraken classifies k-mers it will match them to the lowest commen ancestor of all genomes containing the k-mer, in this case to Coronovirinae. This could possibly indicate that the organism these reads belong to is not well-represented in our Kraken database (possibly an emerging pathogen).
+
+One option to get a bit more information about what's going on would be to use a larger Kraken database, but this requires a lot more computer resources. Another option is to try and assemble these reads with [SPAdes][] and see if we can make any sense of them. Let's try this option.
+
+SPAdes normally operates on reads in fastq format (sequence data plus quality scores), but kraken outputs the classified and unclassified reads in fasta format (no quality score information). Quality scores are useful for correcting possible errors in the reads, but we can still assemble reads into genomes without them and get reasonable results (assuming the reads already are relativly error-free). Let's do this now, disabling error correction with `--only-assembler`.
+
+```
+spades.py --only-assembler -s unclassified.fasta -o unclassified_results
+
+spades.py --only-assembler -s classified.fasta -o classified_results
+```
+
+The assembled genomes will be located under `classified_results/contigs.fasta` and `unclassified_results/contigs.fasta`. In order to get a better idea of what's in these files, let's run them through [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) and examine the matches.
 
 ### Questions
 
-1) What microbe has caused the infection?
+1. Look through the matches for the longest and highest-covered contigs in NCBI. Is there any matches more specific than *Coronovirinae*? What do you suppose is responsible for the patients illness?
 
-2) What advantages and disadvantages can you foresee when using the parallel analysis pipeline approach?
+   You can look through the results for different contigs in NCBI BLAST by using the drop-down menu shown below:
 
-3) Using the viral_report, can you indicate with absolute certainty which species is our etiological culprit? Explain why or why not?
-
-
-
----
-<a name="ex3"></a>
-## Exercise 3
-
-
-### Background:
-
-On January 13th, a 78-year old male patient was rushed to the hospital from a long term care facility and died shortly upon arrival. Prior to the patient passing away, he was experiencing a high fever and shortness of breath. The patient’s medical history indicated he had multiple chronic illnesses for several years.
-
-
-
-### Demonstration:
-
-
-* Filter host reads with KAT
-* Run Kraken with bacterial and viral databases
-* Extract unclassified reads from Kraken
-* Generate an assembly using SPAdes
-* BLAST contigs against NCBI nt database
-
-
----
-### Step 1: Host read filtering
-
-Same instruction as listed in Exercise 1, Step 1 but using dataset found in ex3 folder.
-
-
-```bash
-
-cd ~/workspace/module6/ex3/
-
-kat filter seq -i -o unmatched --seq ../EPD_IMS/reads/ex3/ex3_R1.fastq --seq2 ../EPD_IMS/reads/ex3/ex3_R2.fastq  ../EPD_IMS/kat_db/human_kmers.jf
-
-
-```
-
----
-### Step 2: Classify reads against bacterial database
-
-
-
-In the previous example, we used the parallel analysis approach to find the microbe in question.  In the following exercise, we will be using a serial analysis pipeline .
-
-
-
-<img src="https://github.com/bioinformaticsdotca/Genomic_Epi_2017/blob/master/module6/images/serial_analyses.png?raw=true" alt="Serial analyses pipeline" width="750" />
-
-
-As we are performing a serial analysis, each step will utilize unclassified reads from the previous step rather than from the reads that did not match the host reads. A disadvantage of Kraken when outputting unclassified reads is that the quality values are lost when the user provides both forward and reverse fastq files as input. Hence, to keep Kraken from losing these quality values, we will combine our forward and reverse reads together thus treating them as a single-end reads.
-
-
-```bash
-cat unmatched.in.R1.fastq unmatched.in.R2.fastq > unmatched.fastq
-
-kraken --threads 4 --db  ../EPD_IMS/kraken_db/bacterial unmatched.fastq  --unclassified-out unclassified_bact_reads.fastq > results_bacterial.txt
-
-kraken-report  --db ../EPD_IMS/kraken_db/bacterial results_bacterial.txt > bacterial_report.txt
-
-```
-
-```--unclassified-out``` print unclassified sequences to filename
-
-Taking a look at our bacterial_report.txt using the web browser, we can see that nothing matched the database. Next, we will attempt to classify the ‘unclassified’ reads from the previous Kraken analysis against the viral database.
-
-
----
-### Step 3: Classify reads against the viral kraken database
-
-Now attempt to run the viral database on the same output from unclassified reads from kraken bacterial.
-
-```bash
-kraken --threads 4 --db  ../EPD_IMS/kraken_db/viral  unclassified_bact_reads.fastq --unclassified-out unknown.fastq  > results_viral.txt
-
-kraken-report  --db ../EPD_IMS/kraken_db/viral results_viral.txt > viral_report.txt
-
-```
-
-
-Open the viral_report.txt and scan the report to see if any reads were classified.
-
-The report reveals that everything is unclassified again. Since we have been propagating our reads through the different Kraken databases (e.g. bacterial and viral), our next option to detect the microbe in question is to take all of the unclassified reads and assemble them using SPAdes.
-
-
----
-### Step 4: Generate an assembly with unclassified reads
-
-We will be using default parameters for SPAdes.
-
-More in-depth documentation can be found [here](http://cab.spbu.ru/files/release3.10.1/manual.html).
-
-
-
-```bash
-
-spades.py  -s unknown.fastq -o assembly_results
-
-
-```
-
-Note: it may take a few minutes for SPAdes to run to completion.  
-
-
-SPAdes has many different output files that are self-contained in a single directory. For now, we are only interested in the assembly_results/contigs.fasta.
-
-For a quick search to see what has assembled, we will view the first 10 lines of the largest contig (which happens to be the top fasta entry in contigs.fasta) and do a BLAST on the NCBI server.
-
----
-### Step 4: BLAST partial contig(s) against NT database
-
-Blast the subset of the top contig against NCBI's nt database online
-
-```bash
-
-head -n 10 assembly_results/contigs.fasta
-
->NODE_1_length_8957_cov_2.90725
-TAACTATGATGATCTTTTTGATGGAAACCATGAAGGTAATATTGAATCCATTTTTGAAGC
-GAATGGTGAAGGCTGGGGATCTACAATCGGAGCATGGGGAACATCAATGTTTTACGGAAC
-CGACTGGAAAAAGTTTAATACACCGGCTAATGCTTTAGTTAAAGCTTATGATGATGAAAA
-AGATACGGTGAGAAAAAAATCTACAGTATGGTTCTCTGATAAAACCGTTTCATGGTCCGA
-TACGTATTGGCCGTCATCTAATTTTCCGTTTGCCTATAAGATGAGAAAAACGGATGGTAC
-ACAGAATTTTTATATTTTCAGATTGTCTGATATTTTATTATTGAAGGCAGAAGCGCAGGC
-ACAAACGGGAGACCTCGCCGGTGCTGCGGTAAATGTTAATAAGATAAGAACAAGAGCAGC
-ACTATCACCTGTTGCTTTCGCGACGAAGGCAGACGCAATTGATAAAATCCTAAAAGAACG
-TTATCTGGAGCTTGCATTTGAGGGGCATCGTTGGTTTGATCTGAAAAGAACAGGGAAGTC
-
-
-```
-
-
-Navigate to [NCBI Blast](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch) in your web browser and copy & paste the partial fasta contig into "Enter Query Sequence" textbox. From there, click on the BLAST button.
-
-
-
-### Questions
-
-1) What species is being reported in BLAST? Is this our potential microbial pathogen of interest?
-
-
-2) What advantages and disadvantages can you foresee when using the serial analysis pipeline approach?
-
-3) With the viral_report, can you indicate with absolute certainty which species is our etiological culprit? Why or why not?
-
-4) Why do you think we used SPAdes instead of metaSPAdes? Try it out on the server. (hint : metaspades.py is the tool name)
-
+   ![blast-drop-down][images/]
 
 ## Paper
 
