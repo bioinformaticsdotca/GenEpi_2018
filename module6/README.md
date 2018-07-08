@@ -15,7 +15,7 @@ modified: May 3rd, 2017
 ## Table of contents
 1. [Introduction](#intro)
 2. [Software](#software)    
-2. [Environment Setup](#env)
+2. [Exercise Setup](#setup)
 3. [Exercise 1](#ex1)
 4. [Exercise 2](#ex2)
 5. [Paper](#paper)
@@ -23,7 +23,7 @@ modified: May 3rd, 2017
 <a name="intro"></a>
 ## Introduction
 
-This tutorial aims to introduce a variety of softwares and concepts related to how to detect emerging pathogens from a complex host sample. Each exercise will demonstrate some of the concepts in current routine use and hopefully be applied to future applications.
+This tutorial aims to introduce a variety of software and concepts related to detecting emerging pathogens from a complex host sample. Each exercise will demonstrate some of the concepts in current routine use and hopefully be applied to future applications.
 
 All datasets have been modified to either illustrate a specific learning objective or to reduce the complexity of the problem. Contamination and a lack of large and accurate databases render detection of microbial pathogens difficult. As a disclaimer, all results produced from the tools described in this tutorial and others must also be verified with supplementary bioinformatics or wet-laboratory techniques.
 
@@ -36,10 +36,10 @@ All datasets have been modified to either illustrate a specific learning objecti
 * [SPAdes](http://cab.spbu.ru/software/spades/)
 * [NCBI blast](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch)
  
-To begin, we will copy over the exercises to `~/workspace`.
+<a name="setup"></a>
+## Exercise setup
 
-<a name="env"></a>
-## Environment setup
+To begin, we will copy over the exercises to `~/workspace`. This let's use view the resulting output files in a web browser.
 
 ```bash
 cp -r ~/CourseData/IDGE_data/module6/module6_exercises/ ~/workspace/
