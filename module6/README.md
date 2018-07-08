@@ -137,12 +137,12 @@ After the above command is done running, you should see similar output on your s
 While this initial output file, `results_initial.txt`, is useful as input to some software, it is not really meant to be human readable. Lets convert this file to a human-readable format using `kraken-report`.
 
 ```bash
-kraken-report --db ../../module_data/kraken_db/ results_initial.txt > results_final.txt
+kraken-report --db ~/CourseData/IDGE_data/module6/kraken_db/ results_initial.txt > results_final.txt
 ```
 
-Let’s look at the generated text report from Kraken-report by opening a web browser on your laptop and navigate to **http://XX.oicrcbw.ca**, where XX is your student ID. You should be able to find the file in the following directory hierarchy `~/workspace/module6_exercises/ex1/` and open file `final_report.txt`.
+Let’s look at the generated text report from Kraken-report by opening a web browser and navigate to **http://XX.oicrcbw.ca**, where XX is your student ID. You should be able to find and open the file `results_final.txt` in the following directory hierarchy `module6_exercises/ex1/`.
 
-The output of `kraken-report` is easier to understand and interpret than the previous output we generated from Kraken (documeted [here](https://ccb.jhu.edu/software/kraken/MANUAL.html#sample-report-output-format)). The number on the left indicates the percentage of reads assigned to the taxonimc category listed at the very right.
+The output of `kraken-report` is easier to understand and interpret than the previous output we generated from Kraken (documeted [here](https://ccb.jhu.edu/software/kraken/MANUAL.html#sample-report-output-format)). The number on the left indicates the percentage of reads assigned to the taxonomic category listed at the very right.
 
 To summarize this information into a single interactive figure, we can use [Krona](https://github.com/marbl/Krona/wiki).
 
@@ -159,7 +159,7 @@ ktImportTaxonomy krona_input.txt -o final_web_report.html
 
 Let’s look at what Krona generated. Return to your web browser and refresh the page from Step 3 to see the new files added in the `~/workspace/module6_exercises/ex1` directory.
 
-Click on **final_web_report.html**. *Note: if this is not working, what you should see is shown in the image [here][images/krona_ex1.png]*.
+Click on **final_web_report.html**. *Note: if this is not working, what you should see is shown in the image [here](images/krona_ex1.png)*.
 
 ---
 ### Questions
