@@ -206,7 +206,7 @@ kraken --paired --threads 4 --db ~/CourseData/IDGE_data/module6/kraken_db/ --unc
 Let's also construct a text report and a Krona chart.
 
 ```bash
-kraken-report --db ../../module_data/kraken_db/ results_initial.txt > results_final.txt
+kraken-report --db ~/CourseData/IDGE_data/module6/kraken_db/ results_initial.txt > results_final.txt
 
 cut -f2,3 results_initial.txt > krona_input.txt
 
@@ -215,11 +215,11 @@ ktImportTaxonomy krona_input.txt -o final_web_report.html
 
 Now we can take a look at the text report and Krona chart from `~/workspace/module6_exercises/ex2/` in the web browser.
 
-![krona_ex2][images/krona_ex2.png]
+![krona_ex2](images/krona_ex2.png)
 
 Huh!? That's odd. It looks like ~90% of our reads are unclassified, even after removing human k-mers. These reads could all be sequencing artifacts, or they could indicate that the organism these reads belong to is not well-represented in our Kraken database (possibly even an emerging pathogen).
 
-One option to get a bit more information about what's going on would be to use a larger Kraken database, but this requires a lot more computer resources. Another option is to try and assemble the unclassified reads (`unclassified.fasta`) with [SPAdes][] and see if we can make any sense of them. Let's try this option.
+One option to get a bit more information about what's going on would be to use a larger Kraken database, but this requires a lot more computer resources. Another option is to try and assemble the unclassified reads (`unclassified.fasta`) with SPAdes and see if we can make any sense of them. Let's try this option.
 
 SPAdes normally operates on reads in fastq format (sequence data plus quality scores), but kraken outputs the unclassified reads in fasta format (no quality score information). Quality scores are useful for correcting possible errors in the reads, but we can still assemble reads into genomes without them and get reasonable results (assuming the reads already are relativly error-free). Let's do this now, disabling error correction with `--only-assembler`.
 
@@ -237,7 +237,7 @@ The assembled genome will be located under `unclassified_results/contigs.fasta`.
 
    You can look through the results for different contigs in NCBI BLAST by using the drop-down menu shown below:
 
-   ![blast-drop-down][images/blast-drop-down.png]
+   ![blast-drop-down](images/blast-drop-down.png)
 
    The length and coverage of the contig is listed in the sequence id (e.g., `len_5000` for 5000 bp, `cov_5.15` for an average coverage of 5.15). The coverage gives an indication of how much data (how many reads) were used to assemble this contig.
 
