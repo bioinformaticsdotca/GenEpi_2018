@@ -1,14 +1,14 @@
 ---
 layout: tutorial_page
-permalink: /genomic_epidemiology_2017_EPD_IMS
+permalink: /epidemiology_2018_EPD_IMS
 title: Genomic Epidemiology
 header1: Emerging Pathogen Detection and Identification using Metagenomic Samples
 header2: Infectious Disease Genomic Epidemiology
 image: /site_images/CBW_wshop-epidem_map-icon.png
-home: https://bioinformaticsdotca.github.io/genomic_epidemiology_2017
+home: https://bioinformaticsdotca.github.io/epidemiology_2018
 description: Emerging Pathogen Detection and Identification using Metagenomic Samples
 author: Gary Van Domselaar
-modified: May 3rd, 2017
+modified: July 10th, 2018
 ---
 
 

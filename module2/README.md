@@ -1,14 +1,14 @@
 ---
 layout: tutorial_page
-permalink: /genomic_epidemiology_2018_PGA_1
+permalink: /epidemiology_2018_PGA_1
 title: Genomic Epidemiology
 header1: Pathogen Genomic Analysis I
 header2: SNVPhyl
 image: /site_images/CBW_wshop-epidem_map-icon.png
-home: https://bioinformaticsdotca.github.io/genomic_epidemiology_2018
+home: https://bioinformaticsdotca.github.io/epidemiology_2018
 description: Pathogen Genomic Analysis 1
 author: Gary Van Domselaar
-modified: July 7th, 2017
+modified: July 10th, 2018
 ---
 
 # Haiti Cholera Dataset
