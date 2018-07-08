@@ -1,0 +1,81 @@
+# RGI AT THE COMMAND LINE
+
+mkdir module4
+cd module4
+alias rgi="python3 /home/ubuntu/CourseData/IDGE_data/module4/rgi-4.1.0/rgi"
+alias rgiviz="python3 /home/ubuntu/CourseData/IDGE_data/module4/repository/heatmap/snsheatmap.py"
+
+ls /home/ubuntu/CourseData/IDGE_data/module4/ecoli
+rgi -h
+
+rgi load -h
+wget https://card.mcmaster.ca/latest/data
+tar -xvf data ./card.json
+less card.json
+rgi load -i card.json --local
+ls
+
+rgi main –h
+rgi main -i /home/ubuntu/CourseData/IDGE_data/module4/ecoli/Ecoli_37.fasta -o Ecoli_37 -t contig -a BLAST -n 4 --local --clean
+ls
+less Ecoli_37.json
+less Ecoli_37.txt
+
+ls /home/ubuntu/CourseData/IDGE_data/module4/ecoli_json
+rgiviz –h
+rgiviz -i /home/ubuntu/CourseData/IDGE_data/module4/ecoli_json -category gene_family -o genefamily_samples -cluster samples
+rgiviz -i /home/ubuntu/CourseData/IDGE_data/module4/ecoli_json -category drug_class -o drugclass_samples -cluster samples
+rgiviz -i /home/ubuntu/CourseData/IDGE_data/module4/ecoli_json -o cluster_both -cluster both
+rgiviz -i /home/ubuntu/CourseData/IDGE_data/module4/ecoli_json -o cluster_both_frequency -frequency on -cluster both
+ls
+
+# METAGENOMICS DATA AND THE BURROWS-WHEELER TRANSFORM
+
+alias card_annotation="python3 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/card_annotation.py"
+alias wildcard_annotation="python3 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/wildcard_annotation.py"
+alias card_bowtie_bwa="python3/home/ubuntu/CourseData/IDGE_data/module4/repository/baits/card_bowtie_bwa.py"
+
+mkdir card
+cp card.json card/.
+mkdir wildcard
+cd wildcard
+wget https://card.mcmaster.ca/latest/variants
+tar -xvf variants
+cd ..
+ls
+card_annotation --input card/card.json
+wildcard_annotation --input_directory wildcard --version 3.0.1
+ls
+cat card_database_v*.fasta > reference.fasta
+cat wildcard_database_v*.fasta >> reference.fasta
+
+ls /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample
+less /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R1.fastq
+
+card_bowtie_bwa –h
+# card_bowtie_bwa -1 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R1.fastq -2 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R2.fastq -a bowtie2 -d reference.fasta -j card/card.json -i wildcard/index-for-model-sequences.txt -n 4
+cp /home/ubuntu/CourseData/IDGE_data/module4/bowtie_results/* .
+ls
+
+samtools idxstats gut_R1.sorted.bam | grep "APH(6)-Id"
+
+ls *mapping*
+
+# KMERS AND PATHOGEN-OF-ORIGIN FOR METAGENOMICS
+
+alias card_pathogen_id="python3 /home/ubuntu/CourseData/IDGE_data/module4/repository/kmers/bwa_widget_pathid.py"
+alias card_kmer_search="python3 /home/ubuntu/CourseData/IDGE_data/module4/repository/kmers/metagenomics_kmer_query.py"
+
+samtools view gut_R1.sorted.bam | while read line; do awk '{print ">"$1"__"$3"__"$2"\n"$10}'; done > gut_R1.sorted.fasta
+less gut_R1.sorted.fasta
+mkdir split-files
+cd split-files
+split -l 200000 -d --additional-suffix=.fasta ../gut_R1.sorted.fasta gut_R1.sorted
+cd ..
+
+card_kmer_search -h
+card_kmer_search -i split-files -k 66 -s /home/ubuntu/CourseData/IDGE_data/module4/kmer_database/66k-species.json -g /home/ubuntu/CourseData/IDGE_data/module4/kmer_database/66k-genus.json -p /home/ubuntu/CourseData/IDGE_data/module4/kmer_database/66plasmid-kmers.txt -b /home/ubuntu/CourseData/IDGE_data/module4/kmer_database/66both-kmers.txt -c /home/ubuntu/CourseData/IDGE_data/module4/kmer_database/66chr-kmers.txt -o gut_R1
+
+card_pathogen_id –h
+card_pathogen_id -j gut_R1-66k.json -at gut_R1.allele_mapping_data.txt -gt gut_R1.gene_mapping_data.txt -o gut_R1-66k
+
