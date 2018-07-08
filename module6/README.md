@@ -51,7 +51,7 @@ cd ~/workspace/module6_exercises
 
 ### Patient Background:
 
-On April 27, a 66-year old male was admitted to a local ER. He presented with fever, headache, and vomiting but soon after admission to the ER presented with internal bleeding. CBC revealed elevated white blood cell count, neutrophils, etc. The hospital epidemiologist was consulted to confirm the clinician's findings. 
+On June 14, a 41-year old male was admitted to a local ER. He presented with fever, headache, and vomiting, but soon after admission began coughing up blood. He says he travels a lot for work and has most recently been across 3 continents: Europe, South America, and Africa. A sample was obtained from the patient and sequenced to gain any more insight on the cause of his illness. 
 
 ### Demonstration:
 
@@ -174,14 +174,14 @@ Click on **final_web_report.html**. *Note: if this is not working, what you shou
 
 ### Background:
 
-On April 24, a 5-year old female was admitted to a local ER. She presented with high fever, chills and enlarged lymph nodes. CBC revealed elevated white blood cell count, neutrophils, etc. The hospital epidemiologist was consulted to confirm the clinician's’ findings. 
+On April 24, a 16-year old female was admitted to a local ER. She presented with high fever, muscle pain, and shortness of breath. CBC revealed elevated white blood cell count, neutrophils, etc. The hospital epidemiologist was consulted to confirm the clinician's’ findings. 
 
 ### Demonstration:
 
 * Filter host reads with KAT
-* Run Kraken with small bacteria and viral database
+* Run Kraken with bacteria and viral database
 * Generate text and graphic reports with Kraken and Krona
-* Assemble reads and send to NCBI BLAST to check against additional database
+* Assemble reads and send to NCBI BLAST for additional comparison
 
 ---
 ### Step 1: Host read filtering
@@ -195,9 +195,9 @@ kat filter seq -i -o unmatched --seq ex2_1.fastq --seq2 ex2_2.fastq ~/CourseData
 ```
 
 ---
-### Step 2: Classify reads against bacterial kraken database
+### Step 2: Classify reads against Kraken database
 
-Now let's classify our reads against the kraken database. Please make sure to include `--unclassified-out` as we will make use of this file.
+Now let's classify our reads against the Kraken database. Please make sure to include `--unclassified-out` as we will make use of this file.
 
 ```bash
 kraken --paired --threads 4 --db ~/CourseData/IDGE_data/module6/kraken_db/ --unclassified-out unclassified.fasta unmatched.in.R1.fastq unmatched.in.R2.fastq > results_inital.txt
@@ -217,7 +217,7 @@ Now we can take a look at the text report and Krona chart from `~/workspace/modu
 
 ![krona_ex2](images/krona_ex2.png)
 
-Huh!? That's odd. It looks like ~90% of our reads are unclassified, even after removing human k-mers. These reads could all be sequencing artifacts, or they could indicate that the organism these reads belong to is not well-represented in our Kraken database (possibly even an emerging pathogen).
+Huh!? That's odd. It looks like ~90% of our reads are unclassified, even after removing host k-mers. These reads could all be sequencing artifacts, or they could indicate that the organism these reads belong to is not well-represented in our Kraken database (possibly even an emerging pathogen).
 
 One option to get a bit more information about what's going on would be to use a larger Kraken database, but this requires a lot more computer resources. Another option is to try and assemble the unclassified reads (`unclassified.fasta`) with SPAdes and see if we can make any sense of them. Let's try this option.
 
@@ -241,7 +241,7 @@ The assembled genome will be located under `unclassified_results/contigs.fasta`.
 
    The length and coverage of the contig is listed in the sequence id (e.g., `len_5000` for 5000 bp, `cov_5.15` for an average coverage of 5.15). The coverage gives an indication of how much data (how many reads) were used to assemble this contig.
 
-   *Note: We specifically removed the organism you will find from the Kraken database for this workshop. This organism would be found by Kraken for the standard bacterial/viral databases, but emerging pathogens may not be found as easily.*
+   *Note: We specifically removed the organism you will find from the Kraken database for this workshop. This organism would be found by Kraken for the standard bacterial/viral databases, but emerging pathogens may not be identified as easily.*
 
 ## Paper
 
