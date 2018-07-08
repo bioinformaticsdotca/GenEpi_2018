@@ -36,22 +36,14 @@ All datasets have been modified to either illustrate a specific learning objecti
 * [SPAdes](http://cab.spbu.ru/software/spades/)
 * [NCBI blast](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch)
  
-To begin, we will setup our environment in our ~/workspace so we can view our progress using the web browser.
+To begin, we will copy over the exercises to `~/workspace`.
 
 <a name="env"></a>
 ## Environment setup
 
 ```bash
-export WORK_DIR=~/workspace/module6/
-
-mkdir -p $WORK_DIR
-
-cd $WORK_DIR
-
-ln -s ~/CourseData/IDGE_data/EPD_IMS .
-
-mkdir $WORK_DIR/ex1 $WORK_DIR/ex2 $WORK_DIR/ex3
-
+cp -r ~/CourseData/IDGE_data/module6/module6_exercises/ ~/workspace/
+cd ~/workspace/module6_exercises
 ```
 
 <a name="ex1"></a>
@@ -80,9 +72,9 @@ KAT works by breaking down each read into k-mers fragments of length 27 and comp
 <img src="https://github.com/bioinformaticsdotca/Genomic_Epi_2017/blob/master/module6/images/kat.png?raw=true" alt="KAT" width="750" />  
 
 ```bash
-cd ex1
+cd ~/workspace/module6_exercises/ex1
 
-kat filter seq -i -o unmatched --seq ex1_1.fastq --seq2 ex1_2.fastq ../../kat_db/human_kmers.jf
+kat filter seq -i -o unmatched --seq ex1_1.fastq --seq2 ex1_2.fastq ~/CourseData/IDGE_data/module6/kat_db/human_kmers.jf
 ```
 
 #### Command arguments:
@@ -93,10 +85,28 @@ kat filter seq -i -o unmatched --seq ex1_1.fastq --seq2 ex1_2.fastq ../../kat_db
 
 After the above command is done running, you should see similar output on your screen as shown below.
 
+```
+Kmer Analysis Toolkit (KAT) V2.4.1
+
+Running KAT in filter sequence mode
+-----------------------------------
+
+Loading hashes into memory... done.  Time taken: 34.6s
+
+Filtering sequences ...
+Processed 100000 pairs
+Finished filtering.  Time taken: 14.7s
+
+Found 110056 / 162083 to keep
+
+KAT filter seq completed.
+Total runtime: 49.4s
+```
+
 If the command was successful, your current directory should contain two new files:
 
-* unmatched.in.R1.fastq
-* unmatched.in.R2.fastq
+* `unmatched.in.R1.fastq`
+* `unmatched.in.R2.fastq`
 
 ---
 
@@ -104,18 +114,18 @@ If the command was successful, your current directory should contain two new fil
 
 Now that we have most, if not all, host reads filtered out, it’s time to classify the remaining reads.
 
-Database selection is one of the most crucial parts of running Kraken. One of the many factors that must be considered are the computational resources available. Our current AWS image for the course has only 16G of memory. A major disadvantage of Kraken is that it loads the entire database into memory. With the full viral, bacterial, and archael database on the order of 100 GB we would be unable to run Kraken on the course machine (though the recently released Kraken 2 has done a lot to reduce database size). To help mitigate this, Kraken allows reduced databases to be constructed, which will still give reasonable results. We have constructed our own miniture Kraken database for this course, though a downloadable version is also provided by the authors: [minikraken](https://ccb.jhu.edu/software/kraken/dl/minikraken.tgz).
+Database selection is one of the most crucial parts of running Kraken. One of the many factors that must be considered are the computational resources available. Our current AWS image for the course has only 16G of memory. A major disadvantage of Kraken is that it loads the entire database into memory. With the full viral, bacterial, and archael database on the order of 100 GB we would be unable to run the full database on the course machine (though the recently released Kraken 2 has done a lot to reduce database size). To help mitigate this, Kraken allows reduced databases to be constructed, which will still give reasonable results. We have constructed our own miniture Kraken database for this course, though a downloadable version is also provided by the authors ([minikraken](https://ccb.jhu.edu/software/kraken/dl/minikraken.tgz)).
 
 Lets run the following command in our current directory to classify our reads against the kraken database.
 
 ```bash
-kraken --paired --threads 4 --db ../../module_data/kraken_db/ unmatched.in.R1.fastq unmatched.in.R2.fastq > results_initial.txt
+kraken --paired --threads 4 --db ~/CourseData/IDGE_data/module6/kraken_db/ unmatched.in.R1.fastq unmatched.in.R2.fastq > results_initial.txt
 ```
 
 After the above command is done running, you should see similar output on your screen as shown below.
 
 ```
-110056 sequences (32.66 Mbp) processed in 13.748s (480.3 Kseq/m, 142.53 Mbp/m).
+110056 sequences (32.66 Mbp) processed in 22.528s (293.1 Kseq/m, 86.98 Mbp/m).
   90212 sequences classified (81.97%)
   19844 sequences unclassified (18.03%)
 ```
@@ -130,14 +140,16 @@ While this initial output file, `results_initial.txt`, is useful as input to som
 kraken-report --db ../../module_data/kraken_db/ results_initial.txt > results_final.txt
 ```
 
-Let’s look at the generated text report from Kraken-report by opening a web browser on your laptop, and navigate to http://cbwXX.dyndns.info/, where XX is your student ID. You should be able to find the file in the following directory hierarchy `~/workspace/modules6/ex1/` and open file `final_report.txt`
+Let’s look at the generated text report from Kraken-report by opening a web browser on your laptop and navigate to **http://XX.oicrcbw.ca**, where XX is your student ID. You should be able to find the file in the following directory hierarchy `~/workspace/module6_exercises/ex1/` and open file `final_report.txt`.
 
-The output of `kraken-report` is easier to understand and interpret than the previous output we generated from Kraken, but it is still not as interactive as it could be. Documentation for kraken-report is available [here](https://ccb.jhu.edu/software/kraken/MANUAL.html#sample-reports)
+The output of `kraken-report` is easier to understand and interpret than the previous output we generated from Kraken (documeted [here](https://ccb.jhu.edu/software/kraken/MANUAL.html#sample-report-output-format)). The number on the left indicates the percentage of reads assigned to the taxonimc category listed at the very right.
 
-This is where Krona comes in. Krona generates an interactive html web page that allows hierarchical data to be explored with zooming, multi-layered pie charts and other added features.
+To summarize this information into a single interactive figure, we can use [Krona](https://github.com/marbl/Krona/wiki).
 
 ---
-### Step 4: Generate interactive html based report using Kraken-report.
+### Step 4: Generate interactive html-based report using Krona
+
+To generate a Krona figure, we first must make a file, `krona_input.txt`, containing a list of read IDs and the taxonomic IDs these reads were assigned. We can then run `ktImportTaxonomy` to create the figure. To do this, please run the following commands.
 
 ```bash
 cut -f2,3 results_initial.txt > krona_input.txt
@@ -145,18 +157,16 @@ cut -f2,3 results_initial.txt > krona_input.txt
 ktImportTaxonomy krona_input.txt -o final_web_report.html
 ```
 
-Let’s look at what Krona generated.
+Let’s look at what Krona generated. Return to your web browser and refresh the page from Step 3 to see the new files added in the `~/workspace/module6_exercises/ex1` directory.
 
-Return to your web browser and refresh the page from Step 3 to see the new files added in ~/workspace/modules6/ex1 directory.
-
-Click on final_web_report.html and you should see the image below.
-
-![krona_ex1](images/krona_ex1.png)
+Click on **final_web_report.html**. *Note: if this is not working, what you should see is shown in the image [here][images/krona_ex1.png]*.
 
 ---
 ### Questions
 
-1. Given the output of Krona, what do you hypothesize is causing the patient's illness?
+*Note: Precomputed results are in `~/CourseData/IDGE_data/module6/example-outputs/ex1` if needed.*
+
+1. Given the output of Krona (or the Kraken report), what do you hypothesize is causing the patient's illness?
 
 ---
 <a name="ex2"></a>
@@ -179,18 +189,18 @@ On April 24, a 5-year old female was admitted to a local ER. She presented with 
 The first step in this demonstration is to remove the host reads from the dataset prior to downstream analyses.
 
 ```bash
-cd ~/workspace/module6/ex2/
+cd ~/workspace/module6_exercises/ex2/
 
-kat filter seq -i -o unmatched --seq ex2_1.fastq --seq2 ex2_2.fastq ../../module_data/kat_db/human_kmers.jf
+kat filter seq -i -o unmatched --seq ex2_1.fastq --seq2 ex2_2.fastq ~/CourseData/IDGE_data/module6/kat_db/human_kmers.jf
 ```
 
 ---
 ### Step 2: Classify reads against bacterial kraken database
 
-Now let's classify our reads against the kraken database. Please make sure to include `-unclassified-out` as we will make use of these files.
+Now let's classify our reads against the kraken database. Please make sure to include `--unclassified-out` as we will make use of this file.
 
 ```bash
-kraken --paired --threads 4 --db ../../module_data/kraken_db/ --unclassified-out unclassified.fasta unmatched.in.R1.fastq unmatched.in.R2.fastq > results_initial.txt
+kraken --paired --threads 4 --db ~/CourseData/IDGE_data/module6/kraken_db/ --unclassified-out unclassified.fasta unmatched.in.R1.fastq unmatched.in.R2.fastq > results_inital.txt
 ```
 
 Let's also construct a text report and a Krona chart.
@@ -203,9 +213,9 @@ cut -f2,3 results_initial.txt > krona_input.txt
 ktImportTaxonomy krona_input.txt -o final_web_report.html
 ```
 
-Now we can take a look at the text report and Krona chart from `~/workspace/modules6/ex2/bacterial_report.txt` in the web browser.
+Now we can take a look at the text report and Krona chart from `~/workspace/module6_exercises/ex2/` in the web browser.
 
-![image][]
+![krona_ex2][images/krona_ex2.png]
 
 Huh!? That's odd. It looks like ~90% of our reads are unclassified, even after removing human k-mers. These reads could all be sequencing artifacts, or they could indicate that the organism these reads belong to is not well-represented in our Kraken database (possibly even an emerging pathogen).
 
@@ -217,19 +227,21 @@ SPAdes normally operates on reads in fastq format (sequence data plus quality sc
 spades.py --only-assembler -s unclassified.fasta -o unclassified_results
 ```
 
-The assembled genome will be located under `unclassified_results/contigs.fasta`. In order to get a better idea of what's in these files, let's run the assembled genome through [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) and examine the matches.
+The assembled genome will be located under `unclassified_results/contigs.fasta`. In order to get a better idea of what's in these files, let's run the assembled genome through [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch) and examine the matches (note, you can find and download the file by navigating through the filesystem in your web browser).
 
 ### Questions
 
-1. Look through the matches for a few of the longest and highest-covered contigs in NCBI. Are there any matches that could tell you a bit more about what is responsible for the patients illness?
+*Note: Precomputed results are in `~/CourseData/IDGE_data/module6/example-outputs/ex2` if needed.*
+
+1. Look through the matches for a few of the longest and highest-covered contigs in NCBI. Are there any matches that could tell you a bit more about what is responsible for the patient's illness?
 
    You can look through the results for different contigs in NCBI BLAST by using the drop-down menu shown below:
 
    ![blast-drop-down][images/blast-drop-down.png]
 
-   The length and coverage of the contig is listed in the sequence id (e.g., `len_5000` for 5000 bp, `cov_5.1` for an average coverage of 5.1). The coverage indicates how much data (how many reads) match up with this particular contig.
+   The length and coverage of the contig is listed in the sequence id (e.g., `len_5000` for 5000 bp, `cov_5.15` for an average coverage of 5.15). The coverage gives an indication of how much data (how many reads) were used to assemble this contig.
 
-   *Note: We specifically removed the organism you will find from the kraken database for this workshop. This organism would be found by Kraken for the standard bacterial/viral databases, but emerging pathogens may not be*.
+   *Note: We specifically removed the organism you will find from the Kraken database for this workshop. This organism would be found by Kraken for the standard bacterial/viral databases, but emerging pathogens may not be found as easily.*
 
 ## Paper
 
