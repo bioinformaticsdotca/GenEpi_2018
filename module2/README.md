@@ -22,13 +22,23 @@ Please use the [SNVPhyl][] phylogenomics pipeline to construct a whole genome ph
 python /usr/local/snvphyl-galaxy-cli/bin/snvphyl.py --deploy-docker --fastq-dir ~/CourseData/IDGE_data/module2/VCholerae_SNVPhyl/fastq/ --reference-file ~/CourseData/IDGE_data/module2/VCholerae_SNVPhyl/reference/2010EL-1786-Haiti-2010.fasta --min-coverage 4 --output-dir ~/workspace/VCholerae_SNVPhyl_output
 ```
 
+### Command arguments
+
+* `--deploy-docker` launch a [Docker](https://www.docker.com/what-docker) container containing the SNVPhyl software
+* `--fastq-dir` the directory to the sequence reads (in fastq format)
+* `--reference-file` the reference genome file the reads will be aligned to (in fasta format)
+* `--min-coverage` the minimum coverage (number of overlapping reads) needed to identify a variant in the genome
+* `--output-dir` the directory to store the output files
+
 When finished, the output files should all be in `~/workspace/VCholerae_SNVPhyl_output`.
 
 ## Questions
 
 *Note: Precomputed results are in `~/CourseData/IDGE_data/module2/VCholerae_SNVPhyl/example-output` if needed.*
 
-1. Examine the produced phylogenetic tree in `~/workspace/VCholerae_SNVPhyl_output/phylogeneticTree.newick`. To visualize this tree, you can upload the file to <http://phylo.io/> (you will first need to rename the file to end in *nwk* with the command `mv phylogeneticTree.newick phylogeneticTree.nwk`). Given how the genomes group together along with the geographic information and dates, what can you infer about the most likely origin of the introduction of cholera into Haiti?
+1. Examine the produced phylogenetic tree in `~/workspace/VCholerae_SNVPhyl_output/phylogeneticTree.newick`. To visualize this tree, you can upload the file to <http://phylo.io/>. You will first need to rename the file to end in *nwk* with the command `mv phylogeneticTree.newick phylogeneticTree.nwk`. You can then download the file by opening a web browser and navigating to <http://XX.oicrcbw.ca>, where XX is your student ID. You can then navigate to `VCholerae_SNVPhyl_output`.
+
+   Given how the genomes group together along with the geographic information and dates, what can you infer about the most likely origin of the introduction of cholera into Haiti?
 
    For your information, you can find a larger phylogenetic tree in [Figure 1 from "Population Genetics of Vibrio cholerae from Nepal in 2010: Evidence on the Origin of the Haitian Outbreak"][pop-vc-f1].
 
@@ -52,7 +62,7 @@ These read files have been reduced to an average coverage of 10X to speed up exe
 
 2. Examine the table of identified SNVs (`snvTable.tsv`) and take a look at the positions and identified bases which have a status of **filtered-invalid**. Can you think of reasons why these positions were filtered by SNVPhyl?
 
-3. Examine the table of positions examined by SNVPhyl (`vcf2core.tsv`). Definitions of each column are given [here](http://snvphyl.readthedocs.io/en/latest/user/output/#core-positions). What is the the reference genome length?  What is the **Percentage of all positions that are valid, included, and part of the core genome** for **all** contigs (that is, the percent of the reference genome passing all of SNVPhyl's filters)? Can you think of reasons why this number is not 100%?
+3. Examine the summary of positions examined by SNVPhyl (`vcf2core.tsv`). Definitions of each column are given [here](http://snvphyl.readthedocs.io/en/latest/user/output/#core-positions). What is the the reference genome length (hint: run `cut -f 1,2 vcf2core.tsv | column -s $'\t' -t`?  What is the **Percentage of all positions that are valid, included, and part of the core genome** for **all** contigs (that is, the percent of the reference genome passing all of SNVPhyl's filters, try running `cut -f 1,7 vcf2core.tsv | column -s $'\t' -t`)? Can you think of reasons why this number is not 100%?
 
 [SNVPhyl]: https://snvphyl.readthedocs.io
 [pop-vc-f1]: http://mbio.asm.org/content/2/4/e00157-11/F1.expansion.html
