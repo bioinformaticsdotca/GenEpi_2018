@@ -26,7 +26,7 @@ In this part of the tutorial, your instructor will walk you through the followin
 * Examine the NDM-1 beta-lactamase protein, it’s mechanism of action, conferred antibiotic resistance, it’s prevalence, and it’s detection model. (BLASTP of NDM-1 against CARD)
 * Examine the aac(6')-Iaa aminoglycoside acetyltransferase, it’s mechanism of action, conferred antibiotic resistance, it’s prevalence, and it’s detection model. (BLASTP of aac(6')-Iaa against CARD)
 * Examine the recently reported colistin resistance MCR-1 protein, it’s mechanism of action, conferred antibiotic resistance, it’s prevalence, and it’s detection model. (BLASTP of MCR-1 against CARD)
-* Examine the fluoroquinolone resistant gyrB for M. tuberculosis, it’s mechanism of action, conferred antibiotic resistance, and it’s detection model. (Why would BLASTP be inappropriate for this resistance determinant?)
+* Examine the fluoroquinolone resistant gyrB for *M. tuberculosis*, it’s mechanism of action, conferred antibiotic resistance, and it’s detection model. (Why would BLASTP be inappropriate for this resistance determinant?)
 * Examine the glycopeptide resistance gene cluster VanA, it’s mechanism of action, conferred antibiotic resistance, and it’s detection model(s). (Why would BLASTP be inappropriate for this resistance determinant?)
 * Examine the MexAB-OprM efflux complex, it’s mechanism of action, conferred antibiotic resistance, it’s prevalence, and it’s detection model(s). (Why would BLASTP be inappropriate for this resistance determinant?)
 
@@ -100,7 +100,7 @@ ls
 
 The standard RGI tool can be used to analyze metagenomics data, but only for merged reads with Prodigal calling of partial open reading frames (ORFs). This is a computationally expensive approach, since each merged read set may contain a partial ORF, requiring RGI to perform massive amounts of BLAST/DIAMOND analyses. While computationally intensive (and thus generally not recommended), this does allow analysis of metagenomic sequences in protein space, overcoming issues of high-stringency read mapping relative to nucleotide reference databases. Assembled metagenomic data could alternatively be used instead of merged reads.
 
-Lanza et al. ([Microbiome 2018, 15:11](https://www.ncbi.nlm.nih.gov/pubmed/29335005)) used bait capture to sample human gut microbiomes for AMR genes. Using the online RGI under “Low quality / coverage” and “Perfect, Strict and Loose hits” settings, analyze the first 500 merged metagenomic reads from their analysis (file ResCap_first_500.fasta). Take a close look at the predicted “sul2” and “sul4” hits. How good is the evidence for these AMR genes? (*don’t use the “AMR Genes” visualization, it has a bug for multiple hits to the same gene*)
+Lanza et al. ([Microbiome 2018, 15:11](https://www.ncbi.nlm.nih.gov/pubmed/29335005)) used bait capture to sample human gut microbiomes for AMR genes. Using the online RGI under “Low quality / coverage” and “Perfect, Strict and Loose hits” settings, analyze the first 500 merged metagenomic reads from their analysis (file ResCap_first_500.fasta). Take a close look at the predicted “sul2” and “sul4” hits. How good is the evidence for these AMR genes? (**don’t use the “AMR Genes” visualization, it has a bug for multiple hits to the same gene**)
 
 <a name="bwt"></a>
 ## Metagenomics Data and the Burrows-Wheeler Transform
@@ -135,7 +135,7 @@ ls /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample
 less /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R1.fastq
 ```
 
-Ok, let’s perform the BWT for these data against the merged CARD reference data (BWT performed by Bowtie). *DO NOT RUN THE COMMAND IN GRAY, WE WILL VIEW PRE-COMPILED RESULTS*
+Ok, let’s perform the BWT for these data against the merged CARD reference data (BWT performed by Bowtie). **DO NOT RUN THE COMMAND IN GRAY, WE WILL VIEW PRE-COMPILED RESULTS**
 
 ```bash
 card_bowtie_bwa –h
