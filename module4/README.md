@@ -112,7 +112,7 @@ Return to your course account’s working directory, set up some more aliases, a
 ```bash
 alias card_annotation="python3 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/card_annotation.py"
 alias wildcard_annotation="python3 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/wildcard_annotation.py"
-alias card_bowtie_bwa="python3/home/ubuntu/CourseData/IDGE_data/module4/repository/baits/card_bowtie_bwa.py"
+alias card_bowtie_bwa="python3 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/card_bowtie_bwa.py"
 mkdir card
 cp card.json card/.
 mkdir wildcard
