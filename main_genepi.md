@@ -48,21 +48,21 @@ The full course notes are available as a [single PDF]().
 
 [Lecture]()  
 
-[Lab Practical](http://bioinformaticsdotca.github.io/genomic_epidemiology_2017_PGA_1)
+[Lab Practical](http://bioinformaticsdotca.github.io/epidemiology_2018_PGA_1)
 
 ## Module 3: Pathogen Genomic Analysis II
 
 *<font color="#827e9c">Dillon Baker</font>*
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1HxgqxyoGS1l2sioqxGlp5yFrLJmI6iQC/view?usp=sharing)  
  
-[Lab Practical](http://bioinformaticsdotca.github.io/GenEpi_2017_module3_lab)  
+[Lab Practical](http://bioinformaticsdotca.github.io/GenEpi_2018_module3_lab)  
 
 ## Keynote: Open Bioinformatics Takes a Centre Stage in Infectious Disease  
 
 *<font color="#827e9c">Fiona Brinkman</font>*  
 
-[Keynote]()  
+[Keynote](https://drive.google.com/a/bioinformatics.ca/file/d/1ucpFWJ68zkFCKz91dBYuN9P7Bg6Z1bP7/view?usp=sharing)  
 
 ***
 
@@ -72,15 +72,15 @@ The full course notes are available as a [single PDF]().
 
 *<font color="#827e9c">Andrew McArthur</font>*
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1EpA7uZJO5IQXE_fIRaw6UNewG905tZFg/view?usp=sharing)  
   
-[Lab Practical](http://bioinformaticsdotca.github.io/GenEpi_2017_module4_lab)
+[Lab Practical](https://github.com/bioinformaticsdotca/GenEpi_2018/raw/master/module4/Module%204%20-%20AMR%20Analysis%202018.docx)
 
 ## Module 5: Phylogeographic Analysis
 
 *<font color="#827e9c">Anamaria Crisan</font>*
 
-[Lecture]()   
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1V7kx6a4Awk9NIMFN2V3zwJX2BivKN0CE/view?usp=sharing)   
 
 [Lab Practical](http://bioinformaticsdotca.github.io/GenEpi_2017_module5_lab)
 
@@ -98,14 +98,14 @@ The full course notes are available as a [single PDF]().
 
 [Lecture]()
 
-[Lab Practical](http://bioinformaticsdotca.github.io/genomic_epidemiology_2017_EPD_IMS)  
+[Lab Practical](http://bioinformaticsdotca.github.io/epidemiology_2018_EPD_IMS)  
 
 
 ## Module 7: Data Visualization    
 
 *<font color="#827e9c">Anamaria Crisan</font>*
 
-[Lecture]() 
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1Fgl4_9sYxxe1lzNnAvAlGdVK8gmhF1z0/view?usp=sharing) 
 
 [Lab Practical](http://rpubs.com/amcrisan/epiDesignPatterns) 
 
