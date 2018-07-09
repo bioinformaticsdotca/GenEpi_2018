@@ -33,7 +33,7 @@ In this part of the tutorial, your instructor will walk you through the followin
 <a name="#rgi"></a>
 ## RGI for Genome Analysis
 
-As illustrated by the exercise above, the diversity of antimicrobial resistance mechanisms requires a diversity of detection algorithms and a diversity of detection limits. CARD’s Resistance Gene Identifier (RGI) currently integrates four CARD detection models: *Protein Homolog Model*, *Protein Variant Model*, *rRNA Variant Model*, and *Protein Overexpression Model*. Unlike naïve analyses, CARD detection models use curated cut-offs, currently based on BLAST/DIAMOND bitscore cut-offs. Many other available tools are based on BLASTN or BLASTP without defined cut-offs and avoid resistance by mutation entirely. 
+As illustrated by the exercise above, the diversity of antimicrobial resistance mechanisms requires a diversity of detection algorithms and a diversity of detection limits. CARD’s Resistance Gene Identifier (RGI) currently integrates four CARD detection models: **Protein Homolog Model**, **Protein Variant Model**, **rRNA Variant Model**, and **Protein Overexpression Model**. Unlike naïve analyses, CARD detection models use curated cut-offs, currently based on BLAST/DIAMOND bitscore cut-offs. Many other available tools are based on BLASTN or BLASTP without defined cut-offs and avoid resistance by mutation entirely. 
 
 In this part of the tutorial, your instructor will walk you through the following use of CARD’s Resistome Gene Identifier with “Perfect and Strict hits only”:
 
@@ -44,7 +44,7 @@ In this part of the tutorial, your instructor will walk you through the followin
 <a name="rgicommand"></a>
 ## RGI at the Command Line
 
-RGI is a command line tool as well, so we’ll do a demo analysis of 112 clinical multi-drug resistant E. coli from Hamilton area hospitals, sequenced on MiSeq and assembled using SPAdes. We’ll additionally try RGI’s beta heat map tool (planned release August 2018).
+RGI is a command line tool as well, so we’ll do a demo analysis of 112 clinical multi-drug resistant *E. coli* from Hamilton area hospitals, sequenced on MiSeq and assembled using SPAdes. We’ll additionally try RGI’s beta heat map tool (planned release August 2018).
 
 Login into your course account’s working directory, make a module 4 directory, and set some aliases for this demo:
 
