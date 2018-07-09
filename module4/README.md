@@ -37,9 +37,9 @@ As illustrated by the exercise above, the diversity of antimicrobial resistance 
 
 In this part of the tutorial, your instructor will walk you through the following use of CARD’s Resistome Gene Identifier with “Perfect and Strict hits only”:
 
-* Resistome prediction for the multidrug resistant Acinetobacter baumannii MDR-TJ, complete genome (NC_017847)
-* Resistome prediction for the plasmid isolated from Escherichia coli strain MRSN388634 plasmid (KX276657)
-* Explain the difference in triclosan resistance between two clinical strains of Pseudomonas aeruginosa that appear clonal based on identical MLST (Pseudomonas1.fasta, Pseudomonas2.fasta; these are SPAdes assemblies)
+* Resistome prediction for the multidrug resistant *Acinetobacter baumannii* MDR-TJ, complete genome (NC_017847)
+* Resistome prediction for the plasmid isolated from *Escherichia coli* strain MRSN388634 plasmid (KX276657)
+* Explain the difference in triclosan resistance between two clinical strains of *Pseudomonas aeruginosa* that appear clonal based on identical MLST (Pseudomonas1.fasta, Pseudomonas2.fasta; these are SPAdes assemblies)
  
 <a name="rgicommand"></a>
 ## RGI at the Command Line
