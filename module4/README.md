@@ -140,7 +140,7 @@ Ok, let’s perform the BWT for these data against the merged CARD reference dat
 ```bash
 card_bowtie_bwa –h
 ```
-~~card_bowtie_bwa -1 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R1.fastq -2 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R2.fastq -a bowtie2 -d reference.fasta -j card/card.json -i wildcard/index-for-model-sequences.txt -n 4~~
+> card_bowtie_bwa -1 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R1.fastq -2 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R2.fastq -a bowtie2 -d reference.fasta -j card/card.json -i wildcard/index-for-model-sequences.txt -n 4
 ```bash
 cp /home/ubuntu/CourseData/IDGE_data/module4/bowtie_results/* .
 ls
