@@ -135,12 +135,15 @@ ls /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample
 less /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R1.fastq
 ```
 
-Ok, let’s perform the BWT for these data against the merged CARD reference data (BWT performed by Bowtie). **DO NOT RUN THE STRIKED-OUT COMMAND AS IT TAKES TOO LONG TO RUN, WE WILL VIEW PRE-COMPILED RESULTS**
+Ok, let’s perform the BWT for these data against the merged CARD reference data (BWT performed by Bowtie).
 
 ```bash
 card_bowtie_bwa –h
 ```
+
+> **DO NOT RUN THE THIS COMMAND AS IT TAKES TOO LONG TO RUN, WE WILL VIEW PRE-COMPILED RESULTS**
 > card_bowtie_bwa -1 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R1.fastq -2 /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R2.fastq -a bowtie2 -d reference.fasta -j card/card.json -i wildcard/index-for-model-sequences.txt -n 4
+
 ```bash
 cp /home/ubuntu/CourseData/IDGE_data/module4/bowtie_results/* .
 ls
