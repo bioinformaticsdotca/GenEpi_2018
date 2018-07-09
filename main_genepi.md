@@ -10,81 +10,109 @@ description: Course providing an introduction to genomic epidemiology analysis f
 instructors: William Hsiao, Gary Van Domselaar, Eduardo Taboada, Andrew McArthur, Anamaria Crisan, Fiona Brinkman
 length: 3 days
 ---
-
 # Welcome <a id="welcome"></a>
 
-Welcome to Infectious Disease Genomic Epidemiology.  
+Welcome to Infectious Disease Genomic Epidemiology 2018.  
 
-## Install these tools before the workshop:  
+The course schedule can be found [here](https://bioinformaticsdotca.github.io/epidemiology_2018_schedule).
 
-1) A robust text editor.   
+Pre-readings, pre-work, and laptop setup instructions can be found [here](https://bioinformaticsdotca.github.io/epidemiology_2018_prework).<a id="preworkshop"></a>  
 
-* For Windows/PC - [notepad++](http://notepad-plus-plus.org/)  
-* For Linux - [gEdit](http://projects.gnome.org/gedit/)  
-* For Mac – [TextWrangler](http://www.barebones.com/products/textwrangler/download.html)
+We are using Google Classroom for discussion. Join the Class at https://classroom.google.com, select the "+" symbol in the upper right corner, click on "Join Class" and enter the class code provided to you.
 
-2) A file decompression tool.  
+The full course notes are available as a [single PDF]().  
 
-* For Windows/PC – [7zip](http://www.7-zip.org/).  
-* For Linux – [gzip](http://www.gzip.org).   
-* For Mac – already there.
+***
 
-3) A robust internet browser such as Firefox or Safari (Internet Explorer and Chrome are not recommended because of Java issues).
+# Day 1 <a id="day1"></a>
 
-4) SSH client - Mac and Linux users already have a command line ssh program that can be run from the terminal. For Windows users, please download [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).  
+## Welcome
 
-5) SCP/SFTP client - We will be moving data from the servers to the student laptops for visualization. Mac and Linux users already have a command line scp and sftp program. For Windows users, please install [WinSCP](http://winscp.net/eng/download.php).
+*<font color="#827e9c">Ann Meyer</font>*
 
-6) A PDF viewer (Adobe Acrobat or equivalent).
+## Module 1: Introduction to Public Health Microbiology and Genomic Epidemiology
 
-7) GenGIS (http://kiwi.cs.dal.ca/GenGIS/Download).
+*<font color="#827e9c">Will Hsiao</font>*
+
+[Lecture]()   
+
+[Lab Practical: Connecting to the Cloud](http://bioinformaticsdotca.github.io/AWS_setup)
+
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1s5BmPE1OgQwnJFkFiD4yU04o7XyqdHLI/view?usp=sharing)  
+
+* We have set up 25 instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. If you plan on using Linux or Mac OS X, please download [this certificate](http://cbwmeta.dyndns.info/private/CBWNY.pem). Otherwise if you plan on using Windows (with Putty and Winscp), please download [this certificate](http://cbwmeta.dyndns.info/private/CBWNY.ppk).
+
+## Module 2: Pathogen Genomic Analysis I
+
+*<font color="#827e9c">Gary Van Domselaar</font>*
+
+[Lecture]()  
+
+[Lab Practical](http://bioinformaticsdotca.github.io/genomic_epidemiology_2017_PGA_1)
+
+## Module 3: Pathogen Genomic Analysis II
+
+*<font color="#827e9c">Dillon Baker</font>*
+
+[Lecture]()  
+ 
+[Lab Practical](http://bioinformaticsdotca.github.io/GenEpi_2017_module3_lab)  
+
+## Keynote: Open Bioinformatics Takes a Centre Stage in Infectious Disease  
+
+*<font color="#827e9c">Fiona Brinkman</font>*  
+
+[Keynote]()  
+
+***
+
+# Day 2 <a id="day2"></a>
+
+## Module 4: Antimicrobial Resistance Genes  
+
+*<font color="#827e9c">Andrew McArthur</font>*
+
+[Lecture]()  
+  
+[Lab Practical](http://bioinformaticsdotca.github.io/GenEpi_2017_module4_lab)
+
+## Module 5: Phylogeographic Analysis
+
+*<font color="#827e9c">Anamaria Crisan</font>*
+
+[Lecture]()   
+
+[Lab Practical](http://bioinformaticsdotca.github.io/GenEpi_2017_module5_lab)
+
+**Integrated Assignment**  
+
+[Assignment](http://bioinformaticsdotca.github.io/GenEpi_2017_day2_assignment)  
+
+***
+
+# Day 3 <a id="day3"></a>
+
+## Module 6: Emerging Pathogen Detection and Identification Using Metagenomics Samples  
+
+*<font color="#827e9c">Gary Van Domselaar</font>*
+
+[Lecture]()
+
+[Lab Practical](http://bioinformaticsdotca.github.io/genomic_epidemiology_2017_EPD_IMS)  
 
 
-## Read these papers before the workshop:  
+## Module 7: Data Visualization    
 
-General:  
-[A Primer on Infectious Disease Bacterial Genomics](http://cmr.asm.org/content/29/4/881)  
-[Bacterial population genetics, evolution and epidemiology](https://www.ncbi.nlm.nih.gov/pubmed/10365396)  
-[Impact of recombination on bacterial evolution](https://www.ncbi.nlm.nih.gov/pubmed/20452218)  
+*<font color="#827e9c">Anamaria Crisan</font>*
 
-Antimicrobial Resistance:  
-[CARD 2017](https://www.ncbi.nlm.nih.gov/pubmed/27789705)  
-[Antimicrobial resistance surveillance in the genomic age](https://www.ncbi.nlm.nih.gov/pubmed/27875856)  
-[MEGARes](https://www.ncbi.nlm.nih.gov/pubmed/27899569)  
-[Challenges and opportunities for whole-genome sequencing-based surveillance of antibiotic resistance](https://www.ncbi.nlm.nih.gov/pubmed/28134443)  
+[Lecture]() 
 
-Phylogenomics:  
-[SNVPhyl](http://biorxiv.org/content/early/2016/12/09/092940)  
+[Lab Practical](http://rpubs.com/amcrisan/epiDesignPatterns) 
 
-Genome-based Multilocus Sequence Typing:  
-[MLST in the genomic era](https://www.ncbi.nlm.nih.gov/pubmed/24957089)  
-[Whole Genome MLST](https://www.ncbi.nlm.nih.gov/pubmed/24704917)  
+[Lab practical RMarkdown doc](https://github.com/bioinformaticsdotca/Genomic_Epi_2017/blob/master/CBW2017.Rmd)  
 
-Phylogeography readings:  
-[Ebola phylogeo analysis](https://www.nature.com/nature/journal/vaop/ncurrent/full/nature22040.html)  
-[Microreact](http://mgen.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000093)  
-[GenGIS 2.0](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0069885)  
-[Haiti cholera](http://mbio.asm.org/content/5/6/e01721-14.short)  
+## Survey
 
-## Do these tutorials before the workshop:  
+Thank you for attending the Infectious Disease Genomic Epidemiology workshop!  Help us make this workshop better by filling out [our survey]().  
 
-1) **R Preparation tutorials**: You are expected to have completed the following tutorials in **R** beforehand. The tutorial should be very accessible even if you have never used **R** before.
-
-* The [CBW R tutorial](http://bioinformatics-ca.github.io/CBW_R_Tutorial/)
-* [Quick and Dirty Guide to **R**](http://ww2.coastal.edu/kingw/statistics/R-tutorials/text/quick&dirty_R.txt)  
-* The [R Tutorial](http://www.cyclismo.org/tutorial/R/) up to and including 5. Basic Plots
-* The [R command cheat sheet](../../resources/R_Short-refcard.pdf)
-
-2) **UNIX Preparation tutorials**:  
-
-* [UNIX Bootcamp](http://rik.smith-unna.com/command_line_bootcamp/?id=9xnbkx6eaof)
-* [Unix Cheat sheet](http://www.rain.org/~mkummel/unix.html) 
-
-3) [Sequencing Terminology](http://www.ncbi.nlm.nih.gov/projects/genome/glossary.shtml)
-
-4) Download and install GenGIS (http://kiwi.cs.dal.ca/GenGIS/Download), and ideally report any problems they have installing or running the software. If you’re feeling ambitious, you can try out the tutorials that are accessible via http://kiwi.cs.dal.ca/GenGIS/Documentation. 
-
-
-5) **PHYLOViZ Preparation tutorials**: PHYLOViZ can be used for the analysis and visualization of data from sequence-based typing methods, including MLST in its various forms (MLST, rMLST, cgMLST, wgMLST, etc.) and SNP profiles. It can be used to visualize strain relationships using several clustering methods with colour coding based on epidemiological or other forms of ancillary data (i.e. “metadata”). There is a [downloadable version](http://www.phyloviz.net/) as well as an [online version](https://online.phyloviz.net/index). Make sure you check out the [video tutorial](https://www.youtube.com/watch?v=hmbmurFV6ik&feature=youtu.be). If you have time, read the [walkthrough of features](https://online.phyloviz.net/index/tutorial/#introduction) to get familiar with the user interface. 
-
-Please note that these instructions might change prior to the workshop.  
+***  
