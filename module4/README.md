@@ -135,7 +135,7 @@ ls /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample
 less /home/ubuntu/CourseData/IDGE_data/module4/repository/baits/gut_sample/gut_R1.fastq
 ```
 
-Ok, let’s perform the BWT for these data against the merged CARD reference data (BWT performed by Bowtie).
+Ok, let’s perform the BWT for these data against the merged CARD reference data (BWT performed by Bowtie):
 
 ```bash
 card_bowtie_bwa –h
