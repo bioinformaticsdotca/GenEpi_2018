@@ -27,8 +27,8 @@ Students will learn to:
 ### Dataset Description
 
 Your local Public Health Agency has been tasked with investigating an outbreak
-of $ORGANISM. Your bioinformatician has generated some _in silico_ typing
-results for 200 recent $ORGANISM clinical isolates, but it will be up to you to
+of _Salmonella enterica_. Your bioinformatician has generated some _in silico_ typing
+results for 200 recent _Salmonella enterica_ clinical isolates, but it will be up to you to
 perform the downstream analysis.
 
 ### Setting Up
@@ -218,11 +218,38 @@ file.
 
 ### Exercise 3
 
+You're not expected to run the following code during class. However, 
+you may choose to run through this later.
+
+The following represents some of the basic steps that the bioinformatician
+took to prepare data for you to use in the above scenario. 
 
 ```
 
-TODO: What your bioinformatician did
+conda create -n cbw_analysis -c bioconda shovill
 
-A few shell commands, maybe some R scripts
+conda activate cbw_analysis
+
+pip3 install chewbbaca
+
+mkdir assemblies genomes
+
+for base in $(basename -a -s .fastq.gz fastqs/*.fastq.gz | cut -d'_' -f 1 | uniq); do
+
+    shovill --R1 ${base}_1.fastq.gz \
+            --R2 ${base}_2.fastq.gz \
+            --clip \
+            --outdir assemblies/${base}
+
+    ln -sr assemblies/${base}/contigs.fa genomes/${base}.fasta
+
+done
+
+
+chewBBACA.py CreateSchema -i genomes/ -o wgmlst --cpu 4
+
+chewBBACA.py AlleleCall -i genomes/ -g wgmlst/ -o wgmlst/
+
+chewBBACA.py ExtractCgMLST -i wgmlst/AlleleCalls.tsv -o cgmlst
 
 ```
