@@ -14,7 +14,7 @@ length: 3 days
 
 Welcome to Infectious Disease Genomic Epidemiology 2018.  
 
-The course schedule can be found [here](https://bioinformaticsdotca.github.io/epidemiology_2018_schedule).
+The course schedule can be found [here](https://bioinformaticsdotca.github.io/genomic_epidemiology_2018_schedule).
 
 Pre-readings, pre-work, and laptop setup instructions can be found [here](https://bioinformaticsdotca.github.io/epidemiology_2018_prework).<a id="preworkshop"></a>  
 
