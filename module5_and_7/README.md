@@ -1,3 +1,16 @@
+---
+layout: tutorial_page
+permalink: /epidemiology_2018_Phylo&Vis
+title: Genomic Epidemiology
+header1: Emerging Pathogen Detection and Identification using Metagenomic Samples
+header2: Infectious Disease Genomic Epidemiology
+image: /site_images/CBW_wshop-epidem_map-icon.png
+home: https://bioinformaticsdotca.github.io/epidemiology_2018
+description: Emerging Pathogen Detection and Identification using Metagenomic Samples
+author: Anamaria Crisan
+modified: July 10th, 2018
+---
+
 # Tutorial 5 content
 
 In this tutorial we will take a look at [GenGIS](http://kiwi.cs.dal.ca/GenGIS/Main_Page), [Microreact](https://microreact.org/showcase), [Phylocanvas](https://zachcp.github.io/phylocanvas/), and [R Shiny](https://shiny.rstudio.com/).
@@ -47,6 +60,8 @@ For those two are less comfortable with programming, try find someone in the cla
 To logon to R studio go to:
 
  http://xx.oicrcbw.ca:8080 (xx is the student number)
+
+ Username and password information will be distributed in class
 
 
 
