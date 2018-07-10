@@ -16,11 +16,11 @@ home: https://bioinformaticsdotca.github.io/genomic_epidemiology_2018
 | 9:00 | Module 1: Introduction to Public Health Microbiology and Genomic Epidemiology (Will) | | | | |
 | 10:30 | Coffee Break | 10:00 | Coffee Break | 10:00 | Coffee Break |
 | 11:00 | Module 2: Pathogen Genomic Analysis I (Gary) | 10:30 | Module 4 - lab | 10:30 | Module 6 - lab|
-| 12:00 | Lunch on your own | 12:30 | Lunch on you own | 12:30 | Lunch on your own |
-| 1:00 | Module 2 - lab | 1:30 | Module 5: Phylogeographic Analysis (Anamaria) | 1:30 | Module 7: Data Visualization (Anamaria) |
-| 2:00 | Module 3: Pathogen Genomic Analysis II (Dillon) | | | | |
-| 3:00 | Coffee Break | 2:30 | Coffee Break | 2:30 | Coffee Break |
-| 3:30 | Module 3 - lab | 3:00 | Module 5 - lab | 3:00 | Module 7 - lab |
-| 4:30 | Break | 5:00 | Dinner | 5:00 | Concluding Discussion and Survey |  
-| 5:00 | Keynote: Open Bioinformatics Takes Centre Stage in Infectious Disease (Fiona) | | | | |  
-| 6:30 | Dinner - on your own | 6:00 | Integrated Assignment | |
+| 12:30 | Lunch on your own | 12:30 | Lunch on you own | 12:30 | Lunch on your own |
+| 1:30 | Module 2 - lab | 1:30 | Module 5: Phylogeographic Analysis (Anamaria) | 1:30 | Module 7: Data Visualization (Anamaria) |
+| 2:30 | Module 3: Pathogen Genomic Analysis II (Dillon) | | | | |
+| 3:30 | Coffee Break | 2:30 | Coffee Break | 2:30 | Coffee Break |
+| 4:00 | Module 3 - lab | 3:00 | Module 5 - lab | 3:00 | Module 7 - lab |
+| 5:00 | Break | 5:00 | Dinner | 5:00 | Concluding Discussion and Survey |  
+| 5:30 | Keynote: Open Bioinformatics Takes Centre Stage in Infectious Disease (Fiona) | | | | |  
+| 7:00 | Dinner - on your own | 6:00 | Integrated Assignment | |
