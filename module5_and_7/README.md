@@ -11,7 +11,7 @@ author: Anamaria Crisan
 modified: July 10th, 2018
 ---
 
-# Tutorial 5 content
+# Tutorial 5 & 7 content
 
 In this tutorial we will take a look at [GenGIS](http://kiwi.cs.dal.ca/GenGIS/Main_Page), [Microreact](https://microreact.org/showcase), [Phylocanvas](https://zachcp.github.io/phylocanvas/), and [R Shiny](https://shiny.rstudio.com/).
 
@@ -22,26 +22,26 @@ You can download both datasets to follow along was we trying out Microreact and 
 
 **Ebola Data**
 
-[Ebola Paper](http://bioinformaticsdotca.github.io/module5_and_7/28405027.pdf)
+[Ebola Paper](https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/module5_and_7/28405027.pdf)
 
-[Ebola Metadata](http://bioinformaticsdotca.github.io/module5_and_7/microreact-project-west-african-ebola-epidemic-data.csv)
+[Ebola Metadata](https://raw.githubusercontent.com/bioinformaticsdotca/GenEpi_2018/master/module5_and_7/microreact-project-west-african-ebola-epidemic-data.csv)
 
-[Ebola Tree](http://bioinformaticsdotca.github.io/module5_and_7microreact-project-west-african-ebola-epidemic-tree.nwk)
+[Ebola Tree](https://raw.githubusercontent.com/bioinformaticsdotca/GenEpi_2018/master/module5_and_7/microreact-project-west-african-ebola-epidemic-tree.nwk)
 
 **Klebsiella Pneumoniaea**
 
-[Kleb Pneumo Paper](http://bioinformaticsdotca.github.io/module5_and_7/1501049112.full.pdf)
+[Kleb Pneumo Paper](https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/module5_and_7/1501049112.full.pdf)
     
-[Kleb Pneumo Metadata](http://bioinformaticsdotca.github.io/module5_and_7/kleb-pneumo-meta-data.csv)
+[Kleb Pneumo Metadata](https://raw.githubusercontent.com/bioinformaticsdotca/GenEpi_2018/master/module5_and_7/kleb-pneumo-meta-data.csv)
 
-[Kleb Pneumo Tree](http://bioinformaticsdotca.github.io/module5_and_7/kleb-pneumo-meta-tree.nwk)
+[Kleb Pneumo Tree](https://raw.githubusercontent.com/bioinformaticsdotca/GenEpi_2018/master/module5_and_7/kleb-pneumo-meta-tree.nwk)
 
 
 ## GenGIS
 GenGIS works on Windows and OSX machines, so to save time we will conduct a live demonstration and you will not need to download any files.
 
 
-If you would like to follow along, you can download GenGIS and as well as [this map file](http://bioinformaticsdotca.github.io/module5_and_7/NaturalEarth2_WorldMap.tif).
+If you would like to follow along, you can download GenGIS and as well as [this map file](https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/module5_and_7/NaturalEarth2_WorldMap.tif).
 
 
 ## Phylocanvas and Microreact
@@ -50,7 +50,7 @@ We will upload the metadata and tree files to the PhyloCanvas and microreact web
 
 ## R Shiny
 
-We will go through a [brief introduction to R and Shiny](http://bioinformaticsdotca.github.io/module5_and_7/2018_Shiny_Intro).
+We will go through a [brief introduction to R and Shiny](https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/module5_and_7/2018_Shiny_Intro.pdf).
 
 
 Next, we'll take a look at a shiny application designed for Infectious Disease GenEpi, and that uses many of the visualizations deployed in GenGIS, Phylocanvas, and Microreact.

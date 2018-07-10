@@ -88,7 +88,7 @@ The full course notes are available as a [single PDF]().
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1V7kx6a4Awk9NIMFN2V3zwJX2BivKN0CE/view?usp=sharing)   
 
-[Lab Practical](http://bioinformaticsdotca.github.io//epidemiology_2018_Phylo_Vis) 
+[Lab Practical](http://bioinformaticsdotca.github.io//epidemiology_2018_Phylo&Vis) 
 
 **Integrated Assignment**  
 
@@ -113,7 +113,7 @@ The full course notes are available as a [single PDF]().
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1Fgl4_9sYxxe1lzNnAvAlGdVK8gmhF1z0/view?usp=sharing) 
 
-[Lab Practical](http://bioinformaticsdotca.github.io//epidemiology_2018_Phylo_Vis) 
+[Lab Practical](http://bioinformaticsdotca.github.io/epidemiology_2018_Phylo&Vis) 
 
 
 ## Survey
