@@ -24,6 +24,12 @@ The full course notes are available as a [single PDF]().
 
 ***
 
+# Class photo
+
+<img src="https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/gen_epi_photo.jpeg?raw=true" alt="img" width="750" />
+
+***
+
 # Day 1 <a id="day1"></a>
 
 ## Welcome
