@@ -82,7 +82,7 @@ The full course notes are available as a [single PDF]().
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1V7kx6a4Awk9NIMFN2V3zwJX2BivKN0CE/view?usp=sharing)   
 
-[Lab Practical](http://bioinformaticsdotca.github.io/GenEpi_2017_module5_lab)
+[Lab Practical](https://github.com/bioinformaticsdotca/GenEpi_2018/module_5_and_7/module_5_and_7_tutorial.md)
 
 **Integrated Assignment**  
 
@@ -107,9 +107,9 @@ The full course notes are available as a [single PDF]().
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1Fgl4_9sYxxe1lzNnAvAlGdVK8gmhF1z0/view?usp=sharing) 
 
-[Lab Practical](http://rpubs.com/amcrisan/epiDesignPatterns) 
+[Lab Practical](https://github.com/bioinformaticsdotca/GenEpi_2018/module_5_and_7/module_5_and_7_tutorial.md) 
 
-[Lab practical RMarkdown doc](https://github.com/bioinformaticsdotca/Genomic_Epi_2017/blob/master/CBW2017.Rmd)  
+
 
 ## Survey
 

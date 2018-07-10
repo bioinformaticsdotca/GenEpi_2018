@@ -1,0 +1,329 @@
+Site ID,ID,Latitude,Longitude,Year_isolated,Acquisition,Source_Host,Infection_status,Specimen_type,Sample_note,Clinical_note
+5150_1_10,5150_1_10,-37.8142155,144.9632307,2001,Nosocomial,Human,Human_infection,respiratory,sputum,Pneumonia
+5150_1_11,5150_1_11,-37.8142155,144.9632307,2001,Nosocomial,Human,Human_infection,urine,urine,UTI
+5150_1_2,5150_1_2,-37.8142155,144.9632307,2001,Nosocomial,Human,Human_infection,urine,urine,UTI
+5150_1_3,5150_1_3,-37.8142155,144.9632307,2001,Nosocomial,Human,Human_infection,unknown,wound,Wound
+5150_1_4,5150_1_4,-37.8142155,144.9632307,2001,Community,Human,Human_infection,urine,urine,UTI
+5150_1_5,5150_1_5,-37.8142155,144.9632307,2001,Nosocomial,Human,Human_invasive,sterile,blood,Bacteremia
+5150_1_7,5150_1_7,-37.8142155,144.9632307,2001,Nosocomial,Human,NA,respiratory,sputum,Pneumonia
+5150_1_8,5150_1_8,-37.8142155,144.9632307,2001,Nosocomial,Human,NA,sterile,blood,Bacteremia
+5150_1_9,5150_1_9,-37.8142155,144.9632307,2001,Community,Human,Human_infection,urine,urine,UTI
+5150_2_1,5150_2_1,-37.8142155,144.9632307,2001,Community,Human,NA,urine,urine,UTI
+5150_2_10,5150_2_10,-37.8142155,144.9632307,2002,Community,Human,Human_infection,respiratory,sputum,Pneumonia
+5150_2_11,5150_2_11,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_infection,urine,urine,UTI
+5150_2_12,5150_2_12,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_infection,unknown,IV Catheter,NA
+5150_2_2,5150_2_2,-37.8142155,144.9632307,2002,Nosocomial,Human,NA,respiratory,sputum,Pneumonia
+5150_2_3,5150_2_3,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_infection,respiratory,sputum,Pneumonia
+5150_2_4,5150_2_4,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_infection,urine,urine,UTI
+5150_2_5,5150_2_5,-37.8142155,144.9632307,2001,Community,Human,Human_infection,respiratory,sputum,Pneumonia
+5150_2_6,5150_2_6,-37.8142155,144.9632307,2001,Nosocomial,Human,Human_infection,urine,urine,UTI
+5150_2_7,5150_2_7,-37.8142155,144.9632307,2002,Community,Human,Human_infection,urine,urine,UTI
+5150_2_8,5150_2_8,-37.8142155,144.9632307,2002,Community,Human,Human_infection,urine,urine,UTI
+5150_3_1,5150_3_1,-37.8142155,144.9632307,2002,Community,Human,Human_infection,unknown,wound,Wound
+5150_3_10,5150_3_10,-37.8142155,144.9632307,2002,Community,Human,Human_infection,respiratory,sputum,Pneumonia
+5150_3_11,5150_3_11,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_infection,unknown,wound,Wound
+5150_3_2,5150_3_2,-37.8142155,144.9632307,2002,Community,Human,Human_invasive,sterile,blood,Bacteremia
+5150_3_3,5150_3_3,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_infection,respiratory,sputum,Pneumonia
+5150_3_5,5150_3_5,-37.8142155,144.9632307,2002,Community,Human,Human_infection,respiratory,sputum,Pneumonia
+5150_3_6,5150_3_6,-37.8142155,144.9632307,2002,Community,Human,Human_infection,urine,urine,UTI
+5150_3_7,5150_3_7,-37.8142155,144.9632307,2002,Community,Human,Human_invasive,sterile,blood,Bacteremia
+5150_3_8,5150_3_8,-37.8142155,144.9632307,2002,Nosocomial,Human,NA,urine,urine,UTI
+5150_3_9,5150_3_9,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_infection,urine,urine,UTI
+5150_5_1,5150_5_1,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_invasive,sterile,blood,Bacteremia
+5150_5_10,5150_5_10,-37.8142155,144.9632307,2002,Community,Human,Human_invasive,sterile,blood,Bacteremia
+5150_5_11,5150_5_11,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_invasive,sterile,blood,Bacteremia
+5150_5_12,5150_5_12,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_invasive,sterile,blood,Bacteremia
+5150_5_2,5150_5_2,-37.8142155,144.9632307,2002,Community,Human,NA,sterile,blood,Bacteremia
+5150_5_3,5150_5_3,-37.8142155,144.9632307,2002,Community,Human,Human_invasive,sterile,blood,Bacteremia
+5150_5_4,5150_5_4,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_infection,urine,urine,UTI
+5150_5_5,5150_5_5,-37.8142155,144.9632307,2002,Community,Human,Human_infection,urine,urine,UTI
+5150_5_7,5150_5_7,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_infection,urine,urine,UTI
+5150_5_8,5150_5_8,-37.8142155,144.9632307,2002,Nosocomial,Human,Human_infection,urine,urine,UTI
+5150_5_9,5150_5_9,-37.8142155,144.9632307,2002,Community,Human,Human_infection,urine,urine,UTI
+5151_2_1,5151_2_1,1.2800945,103.8509491,2002,Community,Human,Human_invasive,liver,liver,liver abscess
+5151_2_10,5151_2_10,1.2800945,103.8509491,2008,Nosocomial,Human,Human_infection,urine,urine,UTI
+5151_2_11,5151_2_11,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_2_12,5151_2_12,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_2_2,5151_2_2,1.2800945,103.8509491,2003,Community,Human,Human_invasive,unknown,thigh,necrotizing fasciitis - thigh
+5151_2_3,5151_2_3,1.2800945,103.8509491,2004,Community,Human,Human_infection,respiratory,chest,chest wall abscess
+5151_2_4,5151_2_4,1.2800945,103.8509491,2005,Community,Human,Human_invasive,liver,liver,liver abscess
+5151_2_5,5151_2_5,1.2800945,103.8509491,2004,Nosocomial,Human,Human_invasive,sterile,blood,Bacteremia
+5151_2_6,5151_2_6,1.2800945,103.8509491,2004,Nosocomial,Human,Human_infection,urine,urine,Catheter-related UTI
+5151_2_7,5151_2_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_2_8,5151_2_8,1.2800945,103.8509491,2008,Community,Human,Human_invasive,sterile,blood,Bacteremia
+5151_2_9,5151_2_9,1.2800945,103.8509491,2008,NA,Environmental,NA,environment,seawater,NA
+5151_3_1,5151_3_1,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_3_10,5151_3_10,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_3_11,5151_3_11,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_3_2,5151_3_2,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_3_5,5151_3_5,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_3_6,5151_3_6,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_3_7,5151_3_7,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_3_8,5151_3_8,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_3_9,5151_3_9,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_5_1,5151_5_1,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,subclinical mastitis
+5151_5_10,5151_5_10,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_5_11,5151_5_11,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_5_12,5151_5_12,40.7127837,-74.0059413,2006,Community,Human,Human_invasive,sterile,blood,NA
+5151_5_2,5151_5_2,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,subclinical mastitis
+5151_5_3,5151_5_3,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,subclinical mastitis
+5151_5_4,5151_5_4,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,subclinical mastitis
+5151_5_5,5151_5_5,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_5_6,5151_5_6,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_5_7,5151_5_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_5_8,5151_5_8,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_5_9,5151_5_9,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_6_1,5151_6_1,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_6_10,5151_6_10,40.7127837,-74.0059413,2005,NA,Environmental,NA,environment,bedding,NA
+5151_6_11,5151_6_11,40.7127837,-74.0059413,2005,NA,Environmental,NA,environment,bedding,NA
+5151_6_12,5151_6_12,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_6_2,5151_6_2,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_6_3,5151_6_3,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_6_4,5151_6_4,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_6_5,5151_6_5,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5151_6_6,5151_6_6,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_6_7,5151_6_7,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_6_8,5151_6_8,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5151_6_9,5151_6_9,40.7127837,-74.0059413,2005,NA,Environmental,NA,environment,bedding,NA
+5193_1_1,5193_1_1,21.0277644,105.8341598,2008,Community,Human,Human_invasive,liver,pus,liver abscess
+5193_1_10,5193_1_10,21.0277644,105.8341598,2008,Community,Human,NA,sterile,blood,pneumonia
+5193_1_11,5193_1_11,21.0277644,105.8341598,2008,Community,Human,Human_invasive,sterile,blood,a-le abscess
+5193_1_12,5193_1_12,10.8230989,106.6296638,2003,Nosocomial,Human,Human_infection,respiratory,bronchial alveolar lavage,Infection
+5193_1_4,5193_1_4,21.0277644,105.8341598,2007,Community,Human,Human_invasive,sterile,blood,liver abscess
+5193_1_5,5193_1_5,21.0277644,105.8341598,2009,Community,Human,Human_invasive,sterile,blood,liver
+5193_1_6,5193_1_6,21.0277644,105.8341598,2007,Community,Human,Human_invasive,sterile,blood,pneumonia
+5193_1_7,5193_1_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,subclinical mastitis
+5193_1_8,5193_1_8,21.0277644,105.8341598,2009,Community,Human,Human_invasive,sterile,CSF,meningitis
+5193_1_9,5193_1_9,21.0277644,105.8341598,2008,Nosocomial,Human,Human_infection,respiratory,sputum,pneumonia
+5193_2_1,5193_2_1,10.8230989,106.6296638,2004,Nosocomial,Human,Human_infection,respiratory,bronchial alveolar lavage,Infection
+5193_2_10,5193_2_10,10.8230989,106.6296638,2004,Nosocomial,Human,NA,intestinal,anus swab,Carriage
+5193_2_11,5193_2_11,10.8230989,106.6296638,2004,Nosocomial,Human,Human_carriage,respiratory,nose swab,Carriage
+5193_2_12,5193_2_12,10.8230989,106.6296638,2004,Nosocomial,Human,Human_carriage,intestinal,anus swab,Carriage
+5193_2_2,5193_2_2,10.8230989,106.6296638,2007,Nosocomial,Human,Human_infection,respiratory,bronchial alveolar lavage,Infection
+5193_2_3,5193_2_3,10.8230989,106.6296638,2007,Nosocomial,Human,NA,respiratory,bronchial alveolar lavage,Infection
+5193_2_4,5193_2_4,10.8230989,106.6296638,2009,Nosocomial,Human,NA,respiratory,bronchial alveolar lavage,Infection
+5193_2_5,5193_2_5,10.8230989,106.6296638,2007,Nosocomial,Human,Human_infection,respiratory,bronchial alveolar lavage,Infection
+5193_2_6,5193_2_6,10.8230989,106.6296638,2007,Nosocomial,Human,Human_infection,respiratory,bronchial alveolar lavage,Infection
+5193_2_7,5193_2_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,subclinical mastitis
+5193_2_8,5193_2_8,10.8230989,106.6296638,2004,Nosocomial,Human,Human_carriage,respiratory,sputum,Carriage
+5193_2_9,5193_2_9,10.8230989,106.6296638,2004,Nosocomial,Human,Human_carriage,respiratory,nose swab,Carriage
+5193_3_1,5193_3_1,10.8230989,106.6296638,2005,Nosocomial,Human,NA,intestinal,anus swab,Carriage
+5193_3_10,5193_3_10,10.8230989,106.6296638,2005,Community,Human,Human_carriage,intestinal,stool sample,Carriage
+5193_3_11,5193_3_11,10.8230989,106.6296638,2005,Community,Human,NA,intestinal,stool sample,Carriage
+5193_3_12,5193_3_12,10.8230989,106.6296638,2005,Community,Human,Human_carriage,intestinal,stool sample,Carriage
+5193_3_4,5193_3_4,10.8230989,106.6296638,2005,Nosocomial,Human,Human_carriage,respiratory,nose swab,Carriage
+5193_3_5,5193_3_5,10.8230989,106.6296638,2005,Nosocomial,Human,Human_carriage,intestinal,axilla swab,Carriage
+5193_3_6,5193_3_6,10.8230989,106.6296638,2005,Nosocomial,Human,Human_carriage,respiratory,nose swab,Carriage
+5193_3_7,5193_3_7,10.8230989,106.6296638,2005,Nosocomial,Human,Human_carriage,respiratory,nose swab,Carriage
+5193_3_8,5193_3_8,10.8230989,106.6296638,2005,Nosocomial,Human,Human_carriage,intestinal,anus swab,Carriage
+5193_3_9,5193_3_9,10.8230989,106.6296638,2005,Community,Human,Human_carriage,intestinal,stool sample,Carriage
+5193_5_1,5193_5_1,10.8230989,106.6296638,2005,Community,Human,Human_carriage,intestinal,stool sample,Carriage
+5193_5_10,5193_5_10,10.8230989,106.6296638,2006,Community,Human,Human_carriage,intestinal,rectal swab,Carriage
+5193_5_11,5193_5_11,10.8230989,106.6296638,2006,Community,Human,Human_carriage,intestinal,rectal swab,Carriage
+5193_5_12,5193_5_12,10.8230989,106.6296638,2006,Community,Human,Human_carriage,intestinal,rectal swab,Carriage
+5193_5_2,5193_5_2,10.8230989,106.6296638,2007,Community,Human,Human_carriage,intestinal,stool sample,Carriage
+5193_5_4,5193_5_4,10.8230989,106.6296638,2007,Community,Human,NA,intestinal,stool sample,Carriage
+5193_5_6,5193_5_6,10.8230989,106.6296638,2007,Community,Human,NA,intestinal,stool sample,Carriage
+5193_5_7,5193_5_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,subclinical mastitis
+5193_5_8,5193_5_8,10.8230989,106.6296638,2006,Community,Human,Human_carriage,intestinal,rectal swab,Carriage
+5193_5_9,5193_5_9,10.8230989,106.6296638,2006,Community,Human,Human_carriage,intestinal,rectal swab,Carriage
+5193_6_1,5193_6_1,10.8230989,106.6296638,2006,Community,Human,NA,intestinal,rectal swab,Carriage
+5193_6_10,5193_6_10,17.3433796,-62.7559043,2008,NA,Human,Human_invasive,liver,liver,Liver/brain abscesses; Kp positive blood cultures and co-infection with dengue virus
+5193_6_11,5193_6_11,36.778261,-119.4179324,2008,NA,Sea mammal,NA,respiratory,Pleural fluid,pleuritis and suppurative bronchopneumonia
+5193_6_12,5193_6_12,36.778261,-119.4179324,2008,NA,Sea mammal,NA,sterile,amniotic fluid,Amniotic fluid
+5193_6_2,5193_6_2,10.8230989,106.6296638,2006,Community,Human,Human_carriage,intestinal,rectal swab,Carriage
+5193_6_3,5193_6_3,10.8230989,106.6296638,2006,Community,Human,Human_carriage,intestinal,rectal swab,Carriage
+5193_6_4,5193_6_4,10.8230989,106.6296638,2006,Community,Human,Human_carriage,intestinal,rectal swab,Carriage
+5193_6_5,5193_6_5,17.3433796,-62.7559043,2006,NA,Monkey,NA,unknown,Subcutaneous abscess,Abdominal abscesses  chronic peritonitis and mesenteric lymphadentis
+5193_6_6,5193_6_6,17.3433796,-62.7559043,2008,NA,Monkey,NA,respiratory,Oral swab,Healthy
+5193_6_7,5193_6_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,subclinical mastitis
+5193_6_8,5193_6_8,17.3433796,-62.7559043,2008,NA,Monkey,NA,intestinal,rectal swab,Healthy
+5193_6_9,5193_6_9,17.3433796,-62.7559043,2009,NA,Monkey,NA,intestinal,rectal swab,Healthy
+5193_7_1,5193_7_1,17.966667,102.6,2008,Unknown,Human,Human_infection,urine,urine,UTI
+5193_7_10,5193_7_10,17.966667,102.6,2003,Nosocomial,Human,NA,sterile,blood,-
+5193_7_11,5193_7_11,17.966667,102.6,NA,Unknown,Human,Human_invasive,sterile,blood,-
+5193_7_2,5193_7_2,17.966667,102.6,2009,Community,Human,Human_infection,urine,urine,-
+5193_7_3,5193_7_3,17.966667,102.6,2009,Community,Human,Human_infection,urine,urine,UTI
+5193_7_5,5193_7_5,17.966667,102.6,2000,Community,Human,Human_invasive,sterile,blood,-
+5193_7_6,5193_7_6,17.966667,102.6,2002,Community,Human,Human_invasive,sterile,blood,-
+5193_7_7,5193_7_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5193_7_8,5193_7_8,17.966667,102.6,2002,Unknown,Human,NA,sterile,blood,-
+5193_7_9,5193_7_9,17.966667,102.6,2003,Nosocomial,Human,Human_invasive,sterile,blood,Septicaemia
+5193_8_1,5193_8_1,1.2800945,103.8509491,2004,Nosocomial,Human,Human_infection,unknown,foot,Wound infection
+5193_8_10,5193_8_10,1.2800945,103.8509491,2005,Nosocomial,Human,Human_infection,urine,urine,Catheter-related UTI
+5193_8_11,5193_8_11,1.2800945,103.8509491,2001,Community,Human,Human_invasive,unknown,vitreous,endophthalmitis
+5193_8_12,5193_8_12,1.2800945,103.8509491,2002,Community,Human,Human_invasive,sterile,brain,brain abscess
+5193_8_2,5193_8_2,1.2800945,103.8509491,1996,Nosocomial,Human,Human_invasive,sterile,blood,Bacteremia
+5193_8_3,5193_8_3,1.2800945,103.8509491,2004,Nosocomial,Human,Human_infection,urine,urine,UTI
+5193_8_4,5193_8_4,1.2800945,103.8509491,2005,Nosocomial,Human,Human_invasive,sterile,blood,Bacteremia
+5193_8_5,5193_8_5,1.2800945,103.8509491,2005,Nosocomial,Human,Human_carriage,intestinal,gastric aspirate,Colonization
+5193_8_6,5193_8_6,1.2800945,103.8509491,2004,Nosocomial,Human,Human_infection,urine,urine,Catheter-related UTI
+5193_8_7,5193_8_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5193_8_8,5193_8_8,1.2800945,103.8509491,2005,Nosocomial,Human,Human_carriage,urine,urine,Urine colonization
+5193_8_9,5193_8_9,1.2800945,103.8509491,2005,Nosocomial,Human,NA,urine,urine,Catheter-related UTI
+5197_2_1,5197_2_1,10.8230989,106.6296638,2004,Nosocomial,Human,Human_carriage,respiratory,nose swab,Carriage
+5197_2_10,5197_2_10,10.8230989,106.6296638,2005,Nosocomial,Human,Human_carriage,intestinal,anus swab,Carriage
+5197_2_11,5197_2_11,10.8230989,106.6296638,2005,Nosocomial,Human,Human_carriage,respiratory,nose swab,Carriage
+5197_2_12,5197_2_12,10.8230989,106.6296638,2005,Nosocomial,Human,NA,intestinal,anus swab,Carriage
+5197_2_2,5197_2_2,10.8230989,106.6296638,2004,Nosocomial,Human,Human_carriage,intestinal,anus swab,Carriage
+5197_2_3,5197_2_3,10.8230989,106.6296638,2004,Nosocomial,Human,Human_carriage,respiratory,nose swab,Carriage
+5197_2_4,5197_2_4,10.8230989,106.6296638,2005,Nosocomial,Human,NA,intestinal,axilla swab,Carriage
+5197_2_5,5197_2_5,10.8230989,106.6296638,2005,Nosocomial,Human,NA,unknown,canula swab,Carriage
+5197_2_6,5197_2_6,10.8230989,106.6296638,2005,Nosocomial,Human,Human_carriage,intestinal,anus swab,Carriage
+5197_2_7,5197_2_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,subclinical mastitis
+5197_2_8,5197_2_8,10.8230989,106.6296638,2005,Nosocomial,Human,Human_carriage,intestinal,anus swab,Carriage
+5197_2_9,5197_2_9,10.8230989,106.6296638,2005,Nosocomial,Human,Human_carriage,intestinal,anus swab,Carriage
+5197_7_1,5197_7_1,17.966667,102.6,2006,Unknown,Human,Human_invasive,intestinal,Ascitic fluid,-
+5197_7_2,5197_7_2,17.966667,102.6,2007,Unknown,Human,Human_invasive,respiratory,Pleural fluid,Pleural effusion
+5197_7_3,5197_7_3,17.966667,102.6,2008,Unknown,Human,Human_invasive,unknown,pus,Parotid abscess
+5197_7_4,5197_7_4,17.966667,102.6,2007,Unknown,Human,Human_invasive,respiratory,Pleural fluid,-
+5197_7_5,5197_7_5,17.966667,102.6,2009,Unknown,Human,Human_invasive,sterile,pus,Pus  right knee (deep pus)
+5197_7_6,5197_7_6,17.966667,102.6,2009,Unknown,Human,Human_invasive,respiratory,Pleural fluid,-
+5197_7_7,5197_7_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5197_7_8,5197_7_8,17.966667,102.6,2009,Unknown,Human,Human_infection,sterile,pus,Pus  lymph node (superficial pus)
+5197_8_1,5197_8_1,17.966667,102.6,2005,Community,Human,Human_invasive,sterile,blood,Septicaemia
+5197_8_11,5197_8_11,17.966667,102.6,NA,Unknown,Human,Human_invasive,sterile,blood,-
+5197_8_12,5197_8_12,17.966667,102.6,2009,Community,Human,Human_invasive,sterile,blood,Septicaemia
+5197_8_2,5197_8_2,17.966667,102.6,2005,Community,Human,Human_invasive,sterile,blood,Septicaemia
+5197_8_3,5197_8_3,17.966667,102.6,2006,Community,Human,NA,sterile,blood,Septicaemia; cholangitis
+5197_8_4,5197_8_4,17.966667,102.6,2006,Nosocomial,Human,Human_invasive,sterile,blood,Septicaemia
+5197_8_5,5197_8_5,17.966667,102.6,2007,Community,Human,NA,sterile,blood,Septicaemia
+5197_8_6,5197_8_6,17.966667,102.6,2007,Community,Human,Human_invasive,sterile,blood,Septicaemia  pneumonia
+5197_8_7,5197_8_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5197_8_8,5197_8_8,17.966667,102.6,2008,Nosocomial,Human,Human_invasive,sterile,blood,Septicaemia
+5197_8_9,5197_8_9,17.966667,102.6,2008,Unknown,Human,Human_invasive,sterile,blood,Septicaemia
+5235_1_1,5235_1_1,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5235_1_10,5235_1_10,40.7127837,-74.0059413,2007,Community,Human,Unknown,intestinal biopsy,ileum,
+5235_1_11,5235_1_11,40.7127837,-74.0059413,2007,Community,Human,Human_carriage,intestinal biopsy,ileum,
+5235_1_12,5235_1_12,40.7127837,-74.0059413,2007,Community,Human,Unknown,intestinal biopsy,ileum,
+5235_1_2,5235_1_2,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5235_1_3,5235_1_3,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5235_1_4,5235_1_4,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5235_1_5,5235_1_5,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5235_1_6,5235_1_6,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5235_1_7,5235_1_7,40.7127837,-74.0059413,2007,Community,Human,Human_carriage,intestinal biopsy,ileum,
+5235_1_8,5235_1_8,40.7127837,-74.0059413,2007,Community,Human,Unknown,intestinal biopsy,ileum,
+5235_1_9,5235_1_9,40.7127837,-74.0059413,2007,Community,Human,Unknown,intestinal biopsy,ileum,
+5235_2_1,5235_2_1,40.7127837,-74.0059413,2007,Community,Human,Unknown,intestinal biopsy,ileum,
+5235_2_11,5235_2_11,40.7127837,-74.0059413,2005,NA,Environmental,NA,environment,bedding,NA
+5235_2_12,5235_2_12,40.7127837,-74.0059413,2005,NA,Environmental,NA,environment,bedding,NA
+5235_2_2,5235_2_2,40.7127837,-74.0059413,2007,Community,Human,Human_carriage,intestinal biopsy,ileum,
+5235_2_3,5235_2_3,40.7127837,-74.0059413,2007,Community,Human,Human_carriage,intestinal biopsy,ileum,
+5235_2_4,5235_2_4,40.7127837,-74.0059413,2007,Community,Human,NA,intestinal biopsy,ileum,
+5235_2_5,5235_2_5,40.7127837,-74.0059413,2007,Community,Human,Unknown,intestinal biopsy,ileum,
+5235_2_6,5235_2_6,40.7127837,-74.0059413,2005,NA,Bovine,Bovine_carriage,intestinal,faeces,healthy
+5235_2_7,5235_2_7,40.7127837,-74.0059413,2005,NA,Environmental,NA,environment,bedding,NA
+5235_2_8,5235_2_8,40.7127837,-74.0059413,2007,NA,Bovine,Bovine_carriage,intestinal,rumen,healthy
+5235_3_1,5235_3_1,40.7127837,-74.0059413,2007,NA,Bovine,Bovine_carriage,intestinal,rumen,healthy
+5235_3_11,5235_3_11,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5235_3_12,5235_3_12,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5235_3_2,5235_3_2,40.7127837,-74.0059413,2007,NA,Bovine,Bovine_carriage,intestinal,rumen,healthy
+5235_3_4,5235_3_4,40.7127837,-74.0059413,2007,NA,Bovine,Bovine_carriage,intestinal,rumen,healthy
+5235_3_5,5235_3_5,40.7127837,-74.0059413,2006,Community,Human,Human_invasive,sterile,blood,NA
+5235_3_6,5235_3_6,40.7127837,-74.0059413,2006,Community,Human,Human_infection,urine,urine,UTI
+5235_3_7,5235_3_7,40.7127837,-74.0059413,2007,NA,Bovine,Bovine_carriage,intestinal,rumen,healthy
+5235_3_8,5235_3_8,40.7127837,-74.0059413,2006,Community,Human,Human_invasive,sterile,blood,NA
+5235_3_9,5235_3_9,40.7127837,-74.0059413,2006,Community,Human,Human_invasive,sterile,blood,NA
+5235_5_1,5235_5_1,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5235_5_10,5235_5_10,21.0277644,105.8341598,2009,Community,Human,NA,respiratory,sputum,pneumonia
+5235_5_11,5235_5_11,21.0277644,105.8341598,2009,Community,Human,Human_infection,respiratory,sputum,pneumonia
+5235_5_12,5235_5_12,21.0277644,105.8341598,2009,Nosocomial,Human,Human_infection,respiratory,sputum,pneumonia
+5235_5_2,5235_5_2,21.0277644,105.8341598,2009,Community,Human,Human_invasive,sterile,blood,liver
+5235_5_3,5235_5_3,21.0277644,105.8341598,2009,Nosocomial,Human,Human_infection,respiratory,sputum,pneumonia
+5235_5_4,5235_5_4,21.0277644,105.8341598,2009,Community,Human,Human_infection,respiratory,sputum,pneumonia
+5235_5_5,5235_5_5,21.0277644,105.8341598,2009,Community,Human,Human_invasive,sterile,blood,liver
+5235_5_6,5235_5_6,21.0277644,105.8341598,2009,Nosocomial,Human,Human_infection,respiratory,sputum,pneumonia
+5235_5_7,5235_5_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5235_5_8,5235_5_8,21.0277644,105.8341598,2009,Nosocomial,Human,Human_invasive,sterile,blood,liver
+5235_6_1,5235_6_1,21.0277644,105.8341598,2009,Community,Human,Human_invasive,sterile,blood,sepsis
+5235_6_10,5235_6_10,21.0277644,105.8341598,2009,Community,Human,Human_invasive,sterile,blood,pneumonia
+5235_6_11,5235_6_11,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5235_6_12,5235_6_12,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5235_6_2,5235_6_2,21.0277644,105.8341598,2009,Nosocomial,Human,Human_infection,respiratory,sputum,pneumonia
+5235_6_3,5235_6_3,21.0277644,105.8341598,2009,Community,Human,Human_invasive,sterile,blood,liver
+5235_6_5,5235_6_5,21.0277644,105.8341598,2008,Nosocomial,Human,Unknown,urine,urine,NA
+5235_6_6,5235_6_6,21.0277644,105.8341598,2009,Community,Human,Human_invasive,sterile,blood,sepsis
+5235_6_7,5235_6_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5235_6_8,5235_6_8,21.0277644,105.8341598,2008,Community,Human,Human_invasive,sterile,blood,pneumonia
+5235_6_9,5235_6_9,21.0277644,105.8341598,2009,Community,Human,Human_invasive,sterile,blood,liver abscess
+5235_7_1,5235_7_1,-7.2574719,112.7520883,2005,Unknown,Human,Unknown,urine,urine,NA
+5235_7_10,5235_7_10,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5235_7_11,5235_7_11,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5235_7_12,5235_7_12,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,CSF,NA
+5235_7_2,5235_7_2,-7.2574719,112.7520883,2005,Unknown,Human,Unknown,urine,urine,NA
+5235_7_3,5235_7_3,-7.2574719,112.7520883,2005,Unknown,Human,Unknown,urine,urine,NA
+5235_7_4,5235_7_4,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5235_7_5,5235_7_5,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5235_7_6,5235_7_6,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5235_7_7,5235_7_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5235_7_8,5235_7_8,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5235_7_9,5235_7_9,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5235_8_10,5235_8_10,21.0277644,105.8341598,2008,Community,Human,NA,sterile,pus,sepsis
+5235_8_2,5235_8_2,21.0277644,105.8341598,2008,Community,Human,Human_infection,respiratory,sputum,pneumonia
+5235_8_3,5235_8_3,21.0277644,105.8341598,2008,Community,Human,Human_invasive,liver,pus,liver abscess
+5235_8_4,5235_8_4,21.0277644,105.8341598,2008,Community,Human,Human_invasive,sterile,blood,liver abscess
+5235_8_5,5235_8_5,21.0277644,105.8341598,2008,Community,Human,Human_invasive,liver,pus,liver abscess
+5235_8_6,5235_8_6,21.0277644,105.8341598,2008,Community,Human,Human_invasive,sterile,blood,pneumonia
+5235_8_7,5235_8_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,subclinical mastitis
+5235_8_8,5235_8_8,21.0277644,105.8341598,2007,Community,Human,Human_infection,respiratory,sputum,Pneumonia
+5235_8_9,5235_8_9,21.0277644,105.8341598,2009,Community,Human,Unknown,urine,urine,liver
+5299_1_1,5299_1_1,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5299_1_10,5299_1_10,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5299_1_11,5299_1_11,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5299_1_12,5299_1_12,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5299_1_2,5299_1_2,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5299_1_3,5299_1_3,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5299_1_4,5299_1_4,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5299_1_5,5299_1_5,40.7127837,-74.0059413,2006,Community,Human,Human_invasive,sterile,blood,NA
+5299_1_7,5299_1_7,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5299_1_8,5299_1_8,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5299_1_9,5299_1_9,40.7127837,-74.0059413,2007,Community,Human,Human_infection,urine,urine,UTI
+5299_7_1,5299_7_1,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5299_7_10,5299_7_10,52.201776,0.1324319,2009,NA,Mouse,NA,intestinal,feaces,NA
+5299_7_2,5299_7_2,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5299_7_3,5299_7_3,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5299_7_4,5299_7_4,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5299_7_5,5299_7_5,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5299_7_6,5299_7_6,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+5299_7_7,5299_7_7,40.7127837,-74.0059413,2006,NA,Bovine,Bovine_infection,sterile,milk,clinical mastitis
+5299_7_8,5299_7_8,-7.2574719,112.7520883,2005,Unknown,Human,Unknown,urine,urine,NA
+5299_7_9,5299_7_9,-7.2574719,112.7520883,2005,Unknown,Human,Human_invasive,sterile,blood,NA
+Klebs_pneumoniae_subsp_rhinoscleromatis_ATCC_13884,Klebs_pneumoniae_subsp_rhinoscleromatis_ATCC_13884,-0.789275,113.921327,1973,Community,Human,Human_infection,rhinoscleroma,granuloma (rhinoscleromatis),rhinoscleroma
+Klebsiella_pneumoniae_1162281,Klebsiella_pneumoniae_1162281,-0.789275,113.921327,,,Human,NA,,,
+Klebsiella_pneumoniae_1191100241,Klebsiella_pneumoniae_1191100241,52.132633,5.291266,2011,Nosocomial,Human,NA,,,Dutch outbreak
+Klebsiella_pneumoniae_342,Klebsiella_pneumoniae_342,52.132633,5.291266,,NA,Plant,NA,,,
+Klebsiella_pneumoniae_JH1,Klebsiella_pneumoniae_JH1,37.09024,-95.712891,,,Human,NA,(clinical),,clinical isolate
+Klebsiella_pneumoniae_KCTC_2242,Klebsiella_pneumoniae_KCTC_2242,35.907757,127.766922,,,Human,NA,,,
+Klebsiella_pneumoniae_NTUH-K2044,Klebsiella_pneumoniae_NTUH-K2044,22.6158015,120.7120023,,,Human,NA,liver abscess and meningitis,liver abscess,liver abscess
+Klebsiella_pneumoniae_subsp_pneumoniae_1084,Klebsiella_pneumoniae_subsp_pneumoniae_1084,22.6158015,120.7120023,2002,Nosocomial,Human,NA,bacteraemic liver abscess ,,bacteraemic liver abscess 
+Klebsiella_pneumoniae_subsp_pneumoniae_HS11286,Klebsiella_pneumoniae_subsp_pneumoniae_HS11286,35.86166,104.195397,2011,Nosocomial,Human,NA,respiratory,sputum,
+Klebsiella_pneumoniae_subsp_pneumoniae_JC2877,Klebsiella_pneumoniae_subsp_pneumoniae_JC2877,-0.789275,113.921327,,,Human,NA,,,
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH1,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH1,37.09024,-95.712891,2011,Nosocomial,Human,NA,groin,skin lesion,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH10,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH10,37.09024,-95.712891,2011,Nosocomial,Human,NA,groin,,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH11,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH11,37.09024,-95.712891,2011,Nosocomial,Human,NA,rectal swab,rectal swab,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH12,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH12,37.09024,-95.712891,2011,Nosocomial,Human,NA,rectal swab,rectal swab,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH14,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH14,37.09024,-95.712891,2011,Nosocomial,Human,NA,rectal swab,rectal swab,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH16,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH16,37.09024,-95.712891,2011,Nosocomial,Human,NA,throat,,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH17,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH17,37.09024,-95.712891,2011,Nosocomial,Human,NA,,,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH18,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH18,37.09024,-95.712891,2011,Nosocomial,Human,NA,rectal swab,rectal swab,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH19,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH19,37.09024,-95.712891,2011,Nosocomial,Human,NA,rectal swab,rectal swab,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH2,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH2,37.09024,-95.712891,2011,Nosocomial,Human,NA,wound,,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH20,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH20,37.09024,-95.712891,2011,Nosocomial,Human,NA,throat,,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH21,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH21,37.09024,-95.712891,2011,Nosocomial,Human,NA,rectal swab,rectal swab,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH22,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH22,37.09024,-95.712891,2011,Nosocomial,Human,NA,rectal swab,rectal swab,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH23,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH23,37.09024,-95.712891,2011,Nosocomial,Human,NA,,,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH4,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH4,37.09024,-95.712891,2011,Nosocomial,Human,NA,peritoneal fluid,,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH5,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH5,37.09024,-95.712891,2011,Nosocomial,Human,NA,peritoneal fluid,,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH6,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH6,37.09024,-95.712891,2011,Nosocomial,Human,NA,peritoneal fluid,,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH7,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH7,37.09024,-95.712891,2011,Nosocomial,Environmental,NA,ventilator,,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH8,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH8,37.09024,-95.712891,2011,Nosocomial,Human,NA,rectal swab,rectal swab,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH9,Klebsiella_pneumoniae_subsp_pneumoniae_KPNIH9,37.09024,-95.712891,2011,Nosocomial,Human,NA,rectal swab,rectal swab,US NIH Outbreak
+Klebsiella_pneumoniae_subsp_pneumoniae_LCT-KP214,Klebsiella_pneumoniae_subsp_pneumoniae_LCT-KP214,35.86166,104.195397,,NA,Human,NA,pneumonia,,
+Klebsiella_pneumoniae_subsp_pneumoniae_LZ,Klebsiella_pneumoniae_subsp_pneumoniae_LZ,35.86166,104.195397,2010,NA,Environmental,NA,soil,,
+Klebsiella_pneumoniae_subsp_pneumoniae_MGH_78578,Klebsiella_pneumoniae_subsp_pneumoniae_MGH_78578,37.09024,-95.712891,1994,Nosocomial,Human,NA,pneumonia,blood,pneumonia
+Klebsiella_pneumoniae_subsp_pneumoniae_WGLW1,Klebsiella_pneumoniae_subsp_pneumoniae_WGLW1,37.09024,-95.712891,,,Human,NA,,,
+Klebsiella_pneumoniae_subsp_pneumoniae_WGLW3,Klebsiella_pneumoniae_subsp_pneumoniae_WGLW3,37.09024,-95.712891,,,Human,NA,,,
+Klebsiella_sp_1_1_55,Klebsiella_sp_1_1_55,37.09024,-95.712891,,Unknown,Human,NA,intestinal,,isolated from biopsy tissue samples from the ascending colon of a 40 yr old female patient with Crohn's disease in remission. No inflammation was noted for this tissue sample at time of collection.
+Klebsiella_sp_4_1_44FAA,Klebsiella_sp_4_1_44FAA,37.09024,-95.712891,,Unknown,Human,NA,intestinal,,healthy gut biopsy tissue from a 25 year old male patient with Crohn's disease
+Klebsiella_sp_MS_92-3,Klebsiella_sp_MS_92-3,37.09024,-95.712891,,,Human,NA,intestinal,gastrointestinal tract,
+Klebsiella_variicola_At-22,Klebsiella_variicola_At-22,37.09024,-95.712891,NA,NA,Atta cephalotes fungus garden,NA,,,
