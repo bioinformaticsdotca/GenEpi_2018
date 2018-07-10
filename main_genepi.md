@@ -38,7 +38,7 @@ The full course notes are available as a [single PDF]().
 
 [Lab Practical: Connecting to the Cloud](http://bioinformaticsdotca.github.io/AWS_setup)
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1s5BmPE1OgQwnJFkFiD4yU04o7XyqdHLI/view?usp=sharing)  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1hGD74xTcftQWRu1tk2BHXb5joENxmvZU/view?usp=sharing)  
 
 * We have set up 30 instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. If you plan on using Linux or Mac OS X, please download [this certificate](http://main.oicrcbw.ca/private/CBWNY.pem). Otherwise if you plan on using Windows, please download [this certificate](http://main.oicrcbw.ca/private/CBWNY.ppk).
 
@@ -46,7 +46,7 @@ The full course notes are available as a [single PDF]().
 
 *<font color="#827e9c">Gary Van Domselaar</font>*
 
-[Lecture]()  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1kJ50dby8N54xHsCmDFJdZi-KT-RLjEB_/view?usp=sharing)  
 
 [Lab Practical](http://bioinformaticsdotca.github.io/epidemiology_2018_PGA_1)
 
@@ -96,7 +96,7 @@ The full course notes are available as a [single PDF]().
 
 *<font color="#827e9c">Gary Van Domselaar</font>*
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1iWCkxy2-EVy0DjqHBpQMzjJroFBxuJ0b/view?usp=sharing)
 
 [Lab Practical](http://bioinformaticsdotca.github.io/epidemiology_2018_EPD_IMS)  
 
