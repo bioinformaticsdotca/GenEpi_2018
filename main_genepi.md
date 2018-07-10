@@ -40,7 +40,7 @@ The full course notes are available as a [single PDF]().
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1s5BmPE1OgQwnJFkFiD4yU04o7XyqdHLI/view?usp=sharing)  
 
-* We have set up 25 instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. If you plan on using Linux or Mac OS X, please download [this certificate](http://cbwmeta.dyndns.info/private/CBWNY.pem). Otherwise if you plan on using Windows (with Putty and Winscp), please download [this certificate](http://cbwmeta.dyndns.info/private/CBWNY.ppk).
+* We have set up 30 instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. If you plan on using Linux or Mac OS X, please download [this certificate](http://main.oicrcbw.ca/private/CBWNY.pem). Otherwise if you plan on using Windows, please download [this certificate](http://main.oicrcbw.ca/private/CBWNY.ppk).
 
 ## Module 2: Pathogen Genomic Analysis I
 
