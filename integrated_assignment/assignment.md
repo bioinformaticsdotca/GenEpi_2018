@@ -28,9 +28,8 @@ Start with a tutorial: https://irida.corefacility.ca/documentation/user/index.ht
 2) Basic navigation (Project, Samples, Analysis)  
 3) Upload a single dataset  
 3) Select samples and create new projects  
-4) Carry out some analysis and share that analysis   
-Use this form to avoid redundant analysis, put your name next to the Strain you picked to analyze:   https://docs.google.com/spreadsheets/d/1EX1z1JaV4hxm2n2ID5S2Az7CDGTs11_W6YFIzRmlqAk/edit#gid=1491924087
-5) Access, view and download analysis results  
+4) Carry out some analysis and share that analysis. Use [**this form**](https://docs.google.com/spreadsheets/d/1EX1z1JaV4hxm2n2ID5S2Az7CDGTs11_W6YFIzRmlqAk/edit#gid=1491924087) to avoid redundant analysis, put your name next to the Strain you picked to analyze.   
+5) Access, view and download analysis results   
 6) Metadata  
 
 Scenerio:  
