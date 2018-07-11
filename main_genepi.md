@@ -80,7 +80,7 @@ The full course notes are available as a [single PDF]().
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1EpA7uZJO5IQXE_fIRaw6UNewG905tZFg/view?usp=sharing)  
   
-[Lab Practical](https://github.com/bioinformaticsdotca/GenEpi_2018/raw/master/module4/Module%204%20-%20AMR%20Analysis%202018.docx)
+[Lab Practical](https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/module4/README.md)
 
 ## Module 5: Phylogeographic Analysis
 
