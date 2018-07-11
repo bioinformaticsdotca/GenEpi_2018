@@ -1,4 +1,4 @@
-For this integrated assignment, you will work in pairs to investigate a suspected Salmonella outbreak. The sequence data are real but the metadata (include the AMR information) are completely made up!
+For this integrated assignment, you will work in pairs to investigate a suspected Salmonella outbreak. The sequence data are real but the metadata (include the AMR information) are completely made up! We will use IRIDA to demonstrate how it can help with management of samples and preprocessing of sequence data.
 
 IRIDA Demo:
 Extensive documentation for users and developers
