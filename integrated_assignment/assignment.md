@@ -13,7 +13,9 @@ modified: July 11, 2018
 
 For this integrated assignment, you will work in pairs to investigate a suspected Salmonella outbreak. The sequence data are real but the metadata (include the AMR information) are completely made up! We will use IRIDA to demonstrate how it can help with management of samples and preprocessing of sequence data.  
 
-You can find the metadata file [**here**](https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/integrated_assignment/metadata.csv)
+You can find the metadata CSV [**here**](https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/integrated_assignment/metadata.csv)
+
+IRIDA requires the metadata to be uploaded in MS Excel format, which can be found [**here**](https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/integrated_assignment/metadata.xlsx).
 
 Pairing Criteria:  
 1) Not in the same row  
