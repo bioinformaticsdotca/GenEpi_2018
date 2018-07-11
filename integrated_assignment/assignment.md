@@ -1,15 +1,15 @@
----
-layout: tutorial_page
-permalink: /GenEpi_2018_day2_assignment
-title: GenEpi Day 2 assignment
-header1: Workshop Pages for Students
-header2: Infectious Disease Genomic Epidemiology 2018 Assignment Day 2
-image: /site_images/CBW_wshop-epidem_map-icon.png
-home: https://bioinformaticsdotca.github.io/epidemiology_2018
-description: Tuberculosis Dataset
-author: Dillon Barker, Gary van Domselaar
-modified: July 11, 2018
----
+For this integrated assignment, you will work in pairs to investigate a suspected Salmonella outbreak. The sequence data are real but the metadata (include the AMR information) are completely made up!
+
+IRIDA Demo:
+Extensive documentation for users and developers
+Start with a tutorial: https://irida.corefacility.ca/documentation/user/index.html#tutorials
+1) Log-in (your user name is the first part of your email address (the part before the @ sign)
+2) Basic navigation (Project, Samples, Analysis)
+3) Upload a single dataset
+3) Select samples and create new projects
+4) Carry out some analysis
+5) Access, view and download analysis results
+6) Metadata
 
 Public health workers suspect a Canada-wide foodborne disease outbreak of Salmonella has occurred. Whole genome sequencing was performed on Salmonella isolates collected from  patients, food sources, and environmental sources. Some patient isolates showed resistance to a common antibiotic; other patient isolates showed resistance to multiple antibiotics.  The genomic data and epidemiological metadata have been uploaded to the IRIDA platform at Simon Fraser University.  You are asked to perform phylogenomic analysis, phylogeographic analysis, and  temporospatial analysis on these sequences, and to interpret the results.  
 
