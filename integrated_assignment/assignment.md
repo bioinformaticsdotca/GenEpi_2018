@@ -1,3 +1,16 @@
+---
+layout: tutorial_page
+permalink: /GenEpi_2018_day2_assignment
+title: GenEpi Day 2 assignment
+header1: Workshop Pages for Students
+header2: Infectious Disease Genomic Epidemiology 2018 Assignment Day 2
+image: /site_images/CBW_wshop-epidem_map-icon.png
+home: https://bioinformaticsdotca.github.io/epidemiology_2018
+description: Tuberculosis Dataset
+author: Dillon Barker, Gary van Domselaar, Will Hsiao
+modified: July 11, 2018
+---
+
 For this integrated assignment, you will work in pairs to investigate a suspected Salmonella outbreak. The sequence data are real but the metadata (include the AMR information) are completely made up! We will use IRIDA to demonstrate how it can help with management of samples and preprocessing of sequence data.
 
 Pairing Criteria:
