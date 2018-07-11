@@ -92,7 +92,7 @@ The full course notes are available as a [single PDF]().
 
 **Integrated Assignment**  
 
-[Assignment](http://bioinformaticsdotca.github.io/GenEpi_2017_day2_assignment)  
+[Assignment](http://bioinformaticsdotca.github.io/GenEpi_2018_day2_assignment)  
 
 ***
 
