@@ -122,6 +122,6 @@ The full course notes are available as a [single PDF]().
 
 ## Survey
 
-Thank you for attending the Infectious Disease Genomic Epidemiology workshop!  Help us make this workshop better by filling out [our survey]().  
+Thank you for attending the Infectious Disease Genomic Epidemiology workshop!  Help us make this workshop better by filling out [our survey](https://docs.google.com/forms/d/e/1FAIpQLSdKO5QupFZr_dCMZmDcVTgCaxdbXhaPJi66TxvV7vlxeSEjfw/viewform?usp=sf_link).  
 
 ***  
