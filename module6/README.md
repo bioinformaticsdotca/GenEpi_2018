@@ -217,7 +217,7 @@ ktImportTaxonomy krona_input.txt -o final_web_report.html
 
 Now we can take a look at the text report and Krona chart from `module6_exercises/ex2/` in the web browser.
 
-![krona_ex2](images/krona_ex2.png)
+<img src="https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/module6/images/krona_ex2.png?raw=true" alt="krona_ex2" width="750" />
 
 Huh!? That's odd. It looks like ~90% of our reads are unclassified, even after removing host k-mers. These reads could all be sequencing artifacts, or they could indicate that the organism these reads belong to is not well-represented in our Kraken database (possibly even an emerging pathogen).
 
@@ -231,7 +231,7 @@ spades.py --only-assembler -s unclassified.fasta -o unclassified_results
 
 The assembled genome will be located under `unclassified_results/contigs.fasta`. In order to get a better idea of what's in this data, let's run the assembled contigs through [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch) and examine the matches (note, you can find and download the file by navigating through the filesystem in your web browser). Please make sure the **nr** database is selected when running BLAST:
 
-![nr-database](images/nr-database.png)
+<img src="https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/module6/images/nr-database.png?raw=true" alt="nr-database" width="750" />
 
 ### Questions
 
@@ -241,7 +241,7 @@ The assembled genome will be located under `unclassified_results/contigs.fasta`.
 
    You can look through the results for different contigs in NCBI BLAST by using the drop-down menu shown below:
 
-   ![blast-drop-down](images/blast-drop-down.png)
+<img src="https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/module6/images/blast-drop-down.png?raw=true" alt="blast-drop-down" width="750" />
 
    The length and coverage of the contig is listed in the sequence id (e.g., `len_5000` for 5000 bp, `cov_5.15` for an average coverage of 5.15). The coverage gives an indication of how much data (how many reads) were used to assemble this contig.
 
