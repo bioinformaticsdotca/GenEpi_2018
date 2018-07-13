@@ -56,6 +56,8 @@ The full course notes are available as a [single PDF]().
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1kJ50dby8N54xHsCmDFJdZi-KT-RLjEB_/view?usp=sharing)  
 
+[Recording](https://www.youtube.com/watch?v=ymaYXZfJq8s&index=2&list=PL3izGL6oi0S8svosOiiqMwOFTgwyg7EaT)
+
 [Lab Practical](http://bioinformaticsdotca.github.io/epidemiology_2018_PGA_1)
 
 ## Module 3: Pathogen Genomic Analysis II
