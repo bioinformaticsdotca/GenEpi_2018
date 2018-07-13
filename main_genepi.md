@@ -74,6 +74,8 @@ The full course notes are available as a [single PDF]().
 
 [Keynote](https://drive.google.com/a/bioinformatics.ca/file/d/1ucpFWJ68zkFCKz91dBYuN9P7Bg6Z1bP7/view?usp=sharing)  
 
+[Recording](https://www.youtube.com/watch?v=X83EY4JtFvA&index=3&list=PL3izGL6oi0S8svosOiiqMwOFTgwyg7EaT)
+
 ***
 
 # Day 2 <a id="day2"></a>
