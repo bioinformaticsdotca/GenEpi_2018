@@ -40,7 +40,9 @@ The full course notes are available as a [single PDF]().
 
 *<font color="#827e9c">Will Hsiao</font>*
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1FBQsEYl_OMIJDCGJ0B9bdLmWVyH3d86V/view?usp=sharing)   
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1FBQsEYl_OMIJDCGJ0B9bdLmWVyH3d86V/view?usp=sharing) 
+
+[Recording](https://www.youtube.com/watch?v=1QOrfl8F91A&index=1&list=PL3izGL6oi0S8svosOiiqMwOFTgwyg7EaT)
 
 [Lab Practical: Connecting to the Cloud](http://bioinformaticsdotca.github.io/AWS_setup)
 
