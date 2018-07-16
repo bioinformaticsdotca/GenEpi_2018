@@ -84,7 +84,9 @@ The full course notes are available as a [single PDF]().
 
 *<font color="#827e9c">Andrew McArthur</font>*
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1EpA7uZJO5IQXE_fIRaw6UNewG905tZFg/view?usp=sharing)  
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1EpA7uZJO5IQXE_fIRaw6UNewG905tZFg/view?usp=sharing) 
+
+[Recording](https://www.youtube.com/watch?v=2K_2oHEAc9s)
   
 [Lab Practical](https://github.com/bioinformaticsdotca/GenEpi_2018/blob/master/module4/README.md)
 
