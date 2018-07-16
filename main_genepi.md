@@ -96,6 +96,8 @@ The full course notes are available as a [single PDF]().
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1V7kx6a4Awk9NIMFN2V3zwJX2BivKN0CE/view?usp=sharing)   
 
+[Recording](https://www.youtube.com/watch?v=-RH_UKxCmI0)
+
 [Lab Practical](https://bioinformaticsdotca.github.io/epidemiology_2018_Phylo&Vis) 
 
 ## Bonus Bayesian Trees
