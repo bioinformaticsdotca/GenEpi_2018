@@ -120,6 +120,8 @@ The full course notes are available as a [single PDF]().
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1iWCkxy2-EVy0DjqHBpQMzjJroFBxuJ0b/view?usp=sharing)
 
+[Recording](https://www.youtube.com/watch?v=H5UqBMd4od4)
+
 [Lab Practical](http://bioinformaticsdotca.github.io/epidemiology_2018_EPD_IMS)  
 
 
