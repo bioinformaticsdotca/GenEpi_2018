@@ -65,6 +65,8 @@ The full course notes are available as a [single PDF]().
 *<font color="#827e9c">Dillon Baker</font>*
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1HxgqxyoGS1l2sioqxGlp5yFrLJmI6iQC/view?usp=sharing)  
+
+[Recording](https://www.youtube.com/watch?v=YyNej7DCl84&index=4&list=PL3izGL6oi0S8svosOiiqMwOFTgwyg7EaT)
  
 [Lab Practical](http://bioinformaticsdotca.github.io/GenEpi_2018_module3_lab)  
 
