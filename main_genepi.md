@@ -129,7 +129,9 @@ The full course notes are available as a [single PDF]().
 
 *<font color="#827e9c">Anamaria Crisan</font>*
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1Fgl4_9sYxxe1lzNnAvAlGdVK8gmhF1z0/view?usp=sharing) 
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1Fgl4_9sYxxe1lzNnAvAlGdVK8gmhF1z0/view?usp=sharing)
+
+[Recording](https://www.youtube.com/watch?v=cXnh_xaVqhQ)
 
 [Lab Practical](http://bioinformaticsdotca.github.io/epidemiology_2018_Phylo&Vis) 
 
